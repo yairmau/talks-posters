@@ -1,0 +1,148 @@
+---
+title: "Stomatal Optimization under Uncertain Climate"
+subtitle: "The Role of Discounting"
+author: "Yair Mau"
+format:
+  revealjs:
+    # slide-number: c/t
+    margin: 0.05 
+    # navigation-mode: grid
+    # controls-layout: bottom-right
+    chalkboard: true
+    theme: "my_presentation.scss"
+    title-slide-attributes:
+      title-font-size: 80px
+      data-background-image: /archive/figures/plant-circle.png, /archive/site_images/site-logo-black.png
+      data-background-size: 15%, 15%
+      data-background-position: 10% 90%, 90% 90%
+# revealjs-plugins:
+#   - pointer
+---
+
+<!-- good tips here
+https://meghan.rbind.io/blog/quarto-slides/
+https://rstudio-conf-2022.github.io/get-started-quarto/materials/05-presentations.html#/fit-text-.r-fit-text
+https://docs.asciidoctor.org/reveal.js-converter/latest/converter/syntax/title/
+-->
+
+
+![](/archive/figures/super-mario-kart.jpg)
+
+---
+
+![](/archive/figures/mario-driving-coin-bananapeel.png){.absolute top="20%" left="4%" height="60%"}
+
+![](/archive/figures/mario-4environmental-stuff.jpg){.absolute top="20%" right="4%" height="60%"}
+
+---
+
+![](/archive/figures/Mario_mario_kart_8_deluxe.jpg){.absolute bottom="0%" left="0%" height="50%"}
+
+![](/archive/figures/donkey-toy-kart-car-wii-kong-mario.png){.absolute bottom="0%" right="0%" height="50%"}
+
+<!-- ::: {.r-fit-text} -->
+::: {style="font-size: 170%;"}
+| | | |
+|:-----:|:--------------:|:---:|
+| 3   | **acceleration** | 1 |
+| 3   | **top speed**    | 4 |
+| 3.5 | **weight**       | 5 |
+:::
+
+---
+
+::: {.center}
+
+![](/archive/figures/podium.jpg){width="100%"}
+
+:::
+
+---  .slide: class="center" 
+
+hello
+
+<!-- * intelligent agent
+* perceives its environment
+* takes actions autonomously
+* in order to achieve goals
+* may improve its performance with learning or may use knowledge -->
+
+
+---
+
+::: {.panel-tabset}
+
+## Element 1
+
+::: {.center}
+wow, that's so cool
+:::
+
+## Element 2
+
+I can totally hide stuff in here
+
+:::
+
+## Getting up
+#### subtitle
+
+- Turn off alarm
+- Get out of bed
+
+$$
+x_{1,2} = 
+\frac{-b\pm \sqrt{b^2 -4ac}}{2a}
+$$
+
+## Breakfast
+
+- Eat eggs
+- Drink coffeex
+
+::: {.fragment .fade-in fragment-index=1}
+::: {.fragment .fade-out fragment-index=3}
+![](/archive/figures/fruit-tree.png){.absolute right=0% width="200"}
+:::
+:::
+
+::: {.fragment .fade-in fragment-index=2}
+![](/archive/figures/salt-shaker1.png){.absolute right=20% width="200"}
+:::
+
+::: {.fragment .fade-in fragment-index=3}
+![](/archive/figures/footprints.png){.absolute right=0% width="200"}
+:::
+
+# In the evening
+
+hidden text here
+
+## Dinner
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+Left column
+
+![](/archive/figures/salt-shaker1.png){width="100%"}
+
+:::
+
+::: {.column width="50%" .fragment .fade-in fragment-index=2}
+
+Right column
+
+![](/archive/figures/plant-circle.png){width="100%"}
+
+:::
+
+::::
+
+# next
+
+## Going to sleep
+
+- Get in bed
+- Count sheep 

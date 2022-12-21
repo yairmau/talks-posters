@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Talks and Posters",
+    "section": "",
+    "text": "test talk"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "talks/test-talk.html",
+    "href": "talks/test-talk.html",
+    "title": "First presentation",
+    "section": "",
+    "text": "Turn off alarm\nGet out of bed\n\n\\[\nx_{1,2} =\n\\frac{-b\\pm \\sqrt{b^2 -4ac}}{2a}\n\\]\n\n\n\n\n\nEat eggs\nDrink coffeex"
+  },
+  {
+    "objectID": "talks/test-talk.html#dinner",
+    "href": "talks/test-talk.html#dinner",
+    "title": "First presentation",
+    "section": "Dinner",
+    "text": "Dinner\n\n\nLeft column\n\n\nRight column"
+  },
+  {
+    "objectID": "talks/test-talk.html#going-to-sleep",
+    "href": "talks/test-talk.html#going-to-sleep",
+    "title": "First presentation",
+    "section": "Going to sleep",
+    "text": "Going to sleep\n\nGet in bed\nCount sheepc"
+  },
+  {
+    "objectID": "talks/test_talk.html",
+    "href": "talks/test_talk.html",
+    "title": "First presentation",
+    "section": "",
+    "text": "Turn off alarm\nGet out of bed\n\n\\[\nx_{1,2} =\n\\frac{-b\\pm \\sqrt{b^2 -4ac}}{2a}\n\\]"
+  },
+  {
+    "objectID": "talks/test_talk.html#dinner",
+    "href": "talks/test_talk.html#dinner",
+    "title": "Stomatal Optimization under Uncertain Climate",
+    "section": "Dinner",
+    "text": "Dinner\n\n\nLeft column\n\n\nRight column"
+  },
+  {
+    "objectID": "talks/test_talk.html#going-to-sleep",
+    "href": "talks/test_talk.html#going-to-sleep",
+    "title": "Stomatal Optimization under Uncertain Climate",
+    "section": "Going to sleep",
+    "text": "Going to sleep\n\nGet in bed\nCount sheep"
+  },
+  {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Talks",
+    "section": "",
+    "text": "let’s see what happens"
+  },
+  {
+    "objectID": "talks/test_talk.html#getting-up",
+    "href": "talks/test_talk.html#getting-up",
+    "title": "Stomatal Optimization under Uncertain Climate",
+    "section": "Getting up",
+    "text": "Getting up\nsubtitle\n\nTurn off alarm\nGet out of bed\n\n\\[\nx_{1,2} =\n\\frac{-b\\pm \\sqrt{b^2 -4ac}}{2a}\n\\]"
+  },
+  {
+    "objectID": "talks/test_talk.html#slide-title",
+    "href": "talks/test_talk.html#slide-title",
+    "title": "Stomatal Optimization under Uncertain Climate",
+    "section": "Slide Title",
+    "text": "Slide Title"
+  },
+  {
+    "objectID": "talks/test_talk.html#breakfast",
+    "href": "talks/test_talk.html#breakfast",
+    "title": "Stomatal Optimization under Uncertain Climate",
+    "section": "Breakfast",
+    "text": "Breakfast\n\nEat eggs\nDrink coffeex"
+  },
+  {
+    "objectID": "talks/test_talk.html#section",
+    "href": "talks/test_talk.html#section",
+    "title": "Stomatal Optimization under Uncertain Climate",
+    "section": "“”",
+    "text": "“”"
+  }
+]
