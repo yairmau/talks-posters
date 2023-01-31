@@ -1,0 +1,88 @@
+---
+title: "AI tools for the academy"
+subtitle: "Workshop"
+author: "Yair Mau"
+format:
+  revealjs:
+    # slide-number: c/t
+    margin: 0.05 
+    # navigation-mode: grid
+    # controls-layout: bottom-right
+    chalkboard: true
+    # revealjs-plugins:
+    #  - fullscreen
+    theme: "my_presentation.scss"
+    title-slide-attributes:
+      title-font-size: 80px
+      data-background-image: /archive/figures/robot-scratching.png
+      data-background-size: 20%, 20%
+      data-background-position: 10% 90%, 90% 90%
+execute:
+  freeze: auto  # re-render only when source changes
+# revealjs-plugins:
+#   - pointer
+---
+
+
+
+<!-- for this discovery of yours will create forgetfulness in the learners' souls, because they will not use their memories; they will trust to the external written characters and not remember of themselves. The specific which you have discovered is an aid not to memory, but to reminiscence, and you give your disciples not truth, but only the semblance of truth; they will be hearers of many things and will have learned nothing; they will appear to be omniscient and will generally know nothing; they will be tiresome company, having the show of wisdom without the reality. -->
+
+## Who said that? Regading what?
+
+::: {.fragment}
+> ...this innovation will create **forgetfulness** in the learners' souls, because they will not use their memories;  
+it gives not truth, but only the **appearance of truth**;  
+the students will be hearers of many things and **will have learned nothing**;  
+they will appear to be omniscient and will generally **know nothing**, having the show of wisdom without the reality.
+:::
+
+::: {.fragment}
+Socrates, 5th century BCE, about **WRITING** 
+:::
+---
+
+![](/archive/figures/AI-tweet-01.png)
+
+---
+
+![](/archive/figures/AI-tweet-01b.png){width="100%"}
+
+---
+
+![](/archive/figures/AI-policy){width="100%"}
+
+[Ethan Mollick](https://oneusefulthing.substack.com/p/all-my-classes-suddenly-became-ai)
+
+
+---
+
+## Future of email / assignments / essays
+
+![](/archive/figures/future-of-email.jpeg)
+
+---
+
+## Future of email / assignments / essays
+
+<!-- <p align="center">
+  <img src="/archive/figures/dog-leash.jpeg" alt="Alt Text">
+</p> -->
+<!-- ::: {.r-stack} -->
+![](/archive/figures/dog-leash.jpeg){.r-stretch}
+<!-- ::: -->
+
+---
+
+::: {.r-stack}
+![](/archive/figures/AI-tweet-01.png){.fragment width=70%}
+
+![](/archive/figures/AI-tweet-01b.png){.fragment}
+:::
+
+## writing well ≠ thinking well
+
+![](/archive/figures/writing-well.png)
+
+[Gonzalo Frasca](https://twitter.com/frascafrasca/status/1611131636782972935)
+---
+

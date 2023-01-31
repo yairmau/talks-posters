@@ -2,4 +2,4 @@
 title: "Talks and Posters"
 ---
 
-[test talk](talks/test-talk.html)
+[AI tools for the academy](talks/AI_academy.html)
