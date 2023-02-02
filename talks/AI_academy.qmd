@@ -14,7 +14,7 @@ format:
     theme: "my_presentation.scss"
     title-slide-attributes:
       title-font-size: 80px
-      data-background-image: /archive/figures/robot-scratching.png
+      data-background-image: /archive/figures/robot-scratching_transparent3.png
       data-background-size: 20%, 20%
       data-background-position: 10% 90%, 90% 90%
 execute:
@@ -23,6 +23,9 @@ execute:
 #   - pointer
 ---
 
+[Google Doc with links and tips](https://docs.google.com/document/d/1SZdrSj1fc01fZxWdQ5s4On4GXOLgQUsiiPcykaRVgZ0/edit?usp=sharing){preview-link="true"}
+
+---
 
 
 <!-- for this discovery of yours will create forgetfulness in the learners' souls, because they will not use their memories; they will trust to the external written characters and not remember of themselves. The specific which you have discovered is an aid not to memory, but to reminiscence, and you give your disciples not truth, but only the semblance of truth; they will be hearers of many things and will have learned nothing; they will appear to be omniscient and will generally know nothing; they will be tiresome company, having the show of wisdom without the reality. -->
@@ -39,6 +42,28 @@ they will appear to be omniscient and will generally **know nothing**, having th
 ::: {.fragment}
 Socrates, 5th century BCE, about **WRITING** 
 :::
+
+---
+
+::: {.r-fit-text}
+Research
+:::
+
+---
+
+* **Write:** ChatGPT, Lex
+* **Summarize:** ChatGPT, Elicit
+* **Code:** ChatGPT
+* **Literature review:** Elicit
+* **Read better:** Typeset
+* **Cool images for presentations:** DALL·E, Midjourney
+
+---
+
+::: {.r-fit-text}
+Education
+:::
+
 ---
 
 ![](/archive/figures/AI-tweet-01.png)
@@ -64,24 +89,11 @@ Socrates, 5th century BCE, about **WRITING**
 
 ## Future of email / assignments / essays
 
-<!-- <p align="center">
-  <img src="/archive/figures/dog-leash.jpeg" alt="Alt Text">
-</p> -->
-<!-- ::: {.r-stack} -->
-![](/archive/figures/dog-leash.jpeg){.r-stretch}
-<!-- ::: -->
-
----
-
-::: {.r-stack}
-![](/archive/figures/AI-tweet-01.png){.fragment width=70%}
-
-![](/archive/figures/AI-tweet-01b.png){.fragment}
-:::
+![](/archive/figures/dog-leash.jpeg){.absolute top=30% height="60%" left="25%"}
 
 ## writing well ≠ thinking well
 
-![](/archive/figures/writing-well.png)
+![](/archive/figures/writing-well.png){.absolute left=50% width="50%"}
 
 [Gonzalo Frasca](https://twitter.com/frascafrasca/status/1611131636782972935)
 ---
