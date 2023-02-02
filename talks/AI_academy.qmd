@@ -15,7 +15,7 @@ format:
     title-slide-attributes:
       title-font-size: 80px
       data-background-image: /archive/figures/robot-scratching_transparent3.png
-      data-background-size: 20%, 20%
+      data-background-size: 15%, 15%
       data-background-position: 10% 90%, 90% 90%
 execute:
   freeze: auto  # re-render only when source changes
