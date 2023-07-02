@@ -2,4 +2,7 @@
 title: "Talks and Posters"
 ---
 
-[AI tools for the academy](talks/AI_academy.html)
+[AI tools for the academy](talks/AI_academy.html)  
+[optimal control](talks/optimal-stomatal-control-pdf.pdf)  
+[beamer-test](talks/beamer-test.pdf)  
+[exported from keynote](talks/optimal-stomatal-control/index.html)  
