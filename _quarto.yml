@@ -21,9 +21,10 @@ format:
       light: [flatly, custom.scss, custom-light.scss]
       dark: [darkly, custom.scss, custom-dark.scss]
     css: styles.css
-    highlight: false
+    # highlight: false
     # https://quarto.org/docs/output-formats/html-code.html#highlighting
-    highlight-style: gruvbox
+    # highlight-style: gruvbox
+    highlight-style: breezedark
     mainfont: Ubuntu
     monofont: Ubuntu Mono
     max-width: "700"

@@ -1,0 +1,208 @@
+---
+title: "Models"
+subtitle: ""
+author: "Yair Mau"
+format:
+  revealjs:
+    # slide-number: c/t
+    # background-interactive: true
+    margin: 0.05 
+    # navigation-mode: grid
+    # controls-layout: bottom-right
+    chalkboard: true
+    theme: "my_presentation.scss"
+    highlight-style: breezedark
+    title-slide-attributes:
+      title-font-size: 80px
+      # data-background-image: /archive/figures/plant-circle.png, /archive/site_images/site-logo-black.png
+      # data-background-size: 15%, 15%
+      # data-background-position: 10% 90%, 90% 90%
+execute:
+  freeze: auto  # re-render only when source changes
+# revealjs-plugins:
+#   - pointer
+---
+
+<!-- good tips here
+https://meghan.rbind.io/blog/quarto-slides/
+https://rstudio-conf-2022.github.io/get-started-quarto/materials/05-presentations.html#/fit-text-.r-fit-text
+https://docs.asciidoctor.org/reveal.js-converter/latest/converter/syntax/title/
+-->
+
+---
+
+## {background-iframe="https://plato.stanford.edu/entries/models-science/"}
+<!-- ![](/archive/figures/super-mario-kart.jpg) -->
+
+---
+
+::: {.fragment .semi-fade-out .strike}
+::: {style="font-size: 170%;"}
+Semantics
+:::
+:::
+
+::: {style="font-size: 170%;"}
+::: {.fragment .fade-in}
+Meaning
+:::
+:::
+
+. . .
+
+<br>
+
+{{< iconify subway world-1 >}} Models represent a selected part of the world  
+$=$  
+{{< iconify mingcute target-line >}} the model’s target system. 
+
+. . .
+
+<br>
+
+::: {style="font-size: 170%;"}
+🤔 What does this mean?
+::: 
+
+---
+
+## Scale models
+
+![](/archive/figures/nasa-wind-tunnel-wing-testing-1.jpg){fig-align="center" width="100%"}
+
+---
+
+## Analogical models
+
+. . . 
+
+![](/archive/figures/tree-hydraulic-electric-analogy.png){fig-align="center" width="80%"}
+
+---
+
+## Idealized models 
+
+![](/archive/figures/pendulum.png){.absolute top="30%" left="10%" height="70%"}
+
+:::: {.columns}
+
+::: {.column width="50%" .fragment .fade-in fragment-index=2}
+Aristotelian idealization: **neglect stuff**  
+
+<br>
+
+{{< fa regular square-check >}} mass  
+{{< fa regular square-check >}} length  
+{{< fa square-xmark >}} color  
+{{< fa square-xmark >}} material
+
+:::
+
+<!-- ::: {.column width="33%"}
+
+![](/archive/figures/pendulum.png){width="100%"}
+
+::: -->
+
+::: {.column width="50%" .fragment .fade-in fragment-index=3}
+
+Galilean idealization: **distort stuff**  
+
+<br>
+
+{{< fa regular square-check >}} point-like mass  
+{{< fa regular square-check >}} massless string  
+{{< fa regular square-check >}} no friction
+
+:::
+
+::::
+
+---
+
+## Toy + Minimal models
+
+::: {.r-stack}
+![](/archive/figures/horse1.jpg){.fragment width=100%}
+
+![](/archive/figures/horse2.jpg){.fragment width=100%}
+
+:::
+
+---
+
+## Phenomenological models
+
+{{< fa regular square-check >}} observable properties  
+{{< fa square-xmark >}} hidden mechanisms
+
+. . .
+
+![](/archive/figures/bunnies-multiply.png){.absolute top="50%" left="0%" height="50%"}
+
+. . .
+
+![](/archive/figures/exponential.png){.absolute top="10%" right="-20%" height="50%"}
+
+
+---
+
+## Exploratory models
+
+{{< fa regular square-check >}} starting point of further explorations  
+{{< fa regular square-check >}} proofs-of-principle  
+{{< fa square-xmark >}} specific target system  
+{{< fa square-xmark >}} particular experimentally established phenomenon
+
+. . .
+
+![](/archive/figures/lotka-volterra2.png){width=100%}
+
+
+---
+
+## Models of data
+
+{{< fa regular square-check >}} data cleaning  
+{{< fa regular square-check >}} data munging  
+{{< fa regular square-check >}} smoothing, etc
+
+<br>
+
+```python
+# exclude rows with missing values
+df.dropna()
+# resample into daily freq, take average, and forward fill gaps
+df.resample('D').mean().ffill()
+# 7-day running average
+df.rolling(7, center=True).mean()
+```
+---
+
+::: {.fragment .semi-fade-out .strike}
+::: {style="font-size: 170%;"}
+Epistemology
+:::
+:::
+
+::: {style="font-size: 170%;"}
+::: {.fragment .fade-in}
+Knowledge
+:::
+:::
+
+. . .
+
+<br>
+
+{{< fa regular car-side >}} models are vehicles for learning about the world
+
+{{< fa regular lightbulb >}} by studying a model we can discover features of, and learn facts about, the system the model stands for
+
+---
+
+## Learning about a model happens
+
+{{< fa regular building >}} during model construction  
+{{< fa regular screwdriver-wrench >}} during model manipulation
+

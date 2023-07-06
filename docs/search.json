@@ -28,6 +28,62 @@
     "text": "writing well ≠ thinking well\n\nGonzalo Frasca"
   },
   {
+    "objectID": "talks/models.html#scale-models",
+    "href": "talks/models.html#scale-models",
+    "title": "Models",
+    "section": "Scale models",
+    "text": "Scale models"
+  },
+  {
+    "objectID": "talks/models.html#analogical-models",
+    "href": "talks/models.html#analogical-models",
+    "title": "Models",
+    "section": "Analogical models",
+    "text": "Analogical models"
+  },
+  {
+    "objectID": "talks/models.html#idealized-models",
+    "href": "talks/models.html#idealized-models",
+    "title": "Models",
+    "section": "Idealized models",
+    "text": "Idealized models\n\n\n\nAristotelian idealization: neglect stuff\n\n mass\n length\n color\n material\n\nGalilean idealization: distort stuff\n\n point-like mass\n massless string\n no friction"
+  },
+  {
+    "objectID": "talks/models.html#toy-minimal-models",
+    "href": "talks/models.html#toy-minimal-models",
+    "title": "Models",
+    "section": "Toy + Minimal models",
+    "text": "Toy + Minimal models"
+  },
+  {
+    "objectID": "talks/models.html#phenomenological-models",
+    "href": "talks/models.html#phenomenological-models",
+    "title": "Models",
+    "section": "Phenomenological models",
+    "text": "Phenomenological models\n observable properties\n hidden mechanisms"
+  },
+  {
+    "objectID": "talks/models.html#exploratory-models",
+    "href": "talks/models.html#exploratory-models",
+    "title": "Models",
+    "section": "Exploratory models",
+    "text": "Exploratory models\n starting point of further explorations\n proofs-of-principle\n specific target system\n particular experimentally established phenomenon"
+  },
+  {
+    "objectID": "talks/models.html#models-of-data",
+    "href": "talks/models.html#models-of-data",
+    "title": "Models",
+    "section": "Models of data",
+    "text": "Models of data\n data cleaning\n data munging\n smoothing, etc\n\n# exclude rows with missing values\ndf.dropna()\n# resample into daily freq, take average, and forward fill gaps\ndf.resample('D').mean().ffill()\n# 7-day running average\ndf.rolling(7, center=True).mean()"
+  },
+  {
+    "objectID": "talks/models.html#learning-about-a-model-happens",
+    "href": "talks/models.html#learning-about-a-model-happens",
+    "title": "Models",
+    "section": "Learning about a model happens",
+    "text": "Learning about a model happens\n during model construction\n during model manipulation"
+  },
+  {
     "objectID": "talks/index.html",
     "href": "talks/index.html",
     "title": "Talks",
@@ -67,7 +123,7 @@
     "href": "index.html",
     "title": "Talks and Posters",
     "section": "",
-    "text": "AI tools for the academy\noptimal control\nbeamer-test\nexported from keynote"
+    "text": "AI tools for the academy\noptimal control\nbeamer-test\nexported from keynote\nmodels"
   },
   {
     "objectID": "about.html",

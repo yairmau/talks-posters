@@ -6,3 +6,4 @@ title: "Talks and Posters"
 [optimal control](talks/optimal-stomatal-control-pdf.pdf)  
 [beamer-test](talks/beamer-test.pdf)  
 [exported from keynote](talks/optimal-stomatal-control/index.html)  
+[models](talks/models.html)  
