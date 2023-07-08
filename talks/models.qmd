@@ -52,9 +52,9 @@ Meaning
 
 <br>
 
-{{< iconify subway world-1 >}} Models represent a selected part of the world  
-$=$  
-{{< iconify mingcute target-line >}} the model’s target system. 
+{{< fa earth-europe >}} Models represent a selected part of the world:  
+<br>
+{{< fa bullseye >}} the model’s target system. 
 
 . . .
 
@@ -82,37 +82,37 @@ $=$
 
 ## Idealized models 
 
-![](/archive/figures/pendulum.png){.absolute top="30%" left="10%" height="70%"}
+![](/archive/figures/pendulum.png){.absolute top="30%" left="20%" height="70%"}
 
 :::: {.columns}
 
 ::: {.column width="50%" .fragment .fade-in fragment-index=2}
-Aristotelian idealization: **neglect stuff**  
+Aristotelian idealization: **neglect stuff**   
 
 <br>
 
-{{< fa regular square-check >}} mass  
-{{< fa regular square-check >}} length  
-{{< fa square-xmark >}} color  
-{{< fa square-xmark >}} material
+<i class="fa-solid fa-square-check fa-lg fa-fw" style="color: #77bb41;"></i> mass  
+<i class="fa-solid fa-square-check fa-lg fa-fw" style="color: #77bb41;"></i> length  
+<i class="fa-solid fa-square-xmark fa-lg fa-fw" style="color: #ff2600;"></i> color  
+<i class="fa-solid fa-square-xmark fa-lg fa-fw" style="color: #ff2600;"></i> material
 
 :::
 
-<!-- ::: {.column width="33%"}
+::: {.column width="10%"}
 
-![](/archive/figures/pendulum.png){width="100%"}
+<!-- nothing here -->
 
-::: -->
+:::
 
-::: {.column width="50%" .fragment .fade-in fragment-index=3}
+::: {.column width="40%" .fragment .fade-in fragment-index=3}
 
 Galilean idealization: **distort stuff**  
 
 <br>
 
-{{< fa regular square-check >}} point-like mass  
-{{< fa regular square-check >}} massless string  
-{{< fa regular square-check >}} no friction
+<i class="fa-solid fa-square-check fa-lg fa-fw" style="color: #77bb41;"></i> point-like mass  
+<i class="fa-solid fa-square-check fa-lg fa-fw" style="color: #77bb41;"></i> massless string  
+<i class="fa-solid fa-square-check fa-lg fa-fw" style="color: #77bb41;"></i> no friction
 
 :::
 
@@ -120,7 +120,7 @@ Galilean idealization: **distort stuff**
 
 ---
 
-## Toy + Minimal models
+## Toy models + Minimal models
 
 ::: {.r-stack}
 ![](/archive/figures/horse1.jpg){.fragment width=100%}
@@ -133,8 +133,10 @@ Galilean idealization: **distort stuff**
 
 ## Phenomenological models
 
-{{< fa regular square-check >}} observable properties  
-{{< fa square-xmark >}} hidden mechanisms
+<br>
+
+<i class="fa-solid fa-square-check fa-lg fa-fw" style="color: #77bb41;"></i> observable properties  
+<i class="fa-solid fa-square-xmark fa-lg fa-fw" style="color: #ff2600;"></i> hidden mechanisms
 
 . . .
 
@@ -144,15 +146,19 @@ Galilean idealization: **distort stuff**
 
 ![](/archive/figures/exponential.png){.absolute top="10%" right="-20%" height="50%"}
 
+::: {.notes}
+Speaker notes go here.
+:::
 
 ---
 
 ## Exploratory models
 
-{{< fa regular square-check >}} starting point of further explorations  
-{{< fa regular square-check >}} proofs-of-principle  
-{{< fa square-xmark >}} specific target system  
-{{< fa square-xmark >}} particular experimentally established phenomenon
+
+<i class="fa-solid fa-square-check fa-lg fa-fw" style="color: #77bb41;"></i> starting point of further explorations  
+<i class="fa-solid fa-square-check fa-lg fa-fw" style="color: #77bb41;"></i> proofs-of-principle  
+<i class="fa-solid fa-square-xmark fa-lg fa-fw" style="color: #ff2600;"></i> specific target system  
+<i class="fa-solid fa-square-xmark fa-lg fa-fw" style="color: #ff2600;"></i> particular experimentally established phenomenon
 
 . . .
 
@@ -163,9 +169,11 @@ Galilean idealization: **distort stuff**
 
 ## Models of data
 
-{{< fa regular square-check >}} data cleaning  
-{{< fa regular square-check >}} data munging  
-{{< fa regular square-check >}} smoothing, etc
+<br>
+
+<i class="fa-solid fa-square-check fa-lg fa-fw" style="color: #77bb41;"></i> data cleaning  
+<i class="fa-solid fa-square-check fa-lg fa-fw" style="color: #77bb41;"></i> data munging  
+<i class="fa-solid fa-square-check fa-lg fa-fw" style="color: #77bb41;"></i> smoothing, etc
 
 <br>
 
@@ -195,14 +203,108 @@ Knowledge
 
 <br>
 
-{{< fa regular car-side >}} models are vehicles for learning about the world
+<i class="fa-solid fa-car-side fa-lg fa-fw"></i> models are vehicles for learning about the world
 
-{{< fa regular lightbulb >}} by studying a model we can discover features of, and learn facts about, the system the model stands for
+<i class="fa-solid fa-lightbulb fa-lg fa-fw"></i> by studying a model we can discover features of, and learn facts about, the system the model stands for
 
 ---
 
-## Learning about a model happens
+### Learning about a model happens...
 
-{{< fa regular building >}} during model construction  
-{{< fa regular screwdriver-wrench >}} during model manipulation
+:::: {.columns}
 
+::: {.column width="50%" .fragment .fade-in fragment-index=2}
+
+during model construction  
+
+![](/archive/figures/kite1.jpg){width=80%}
+
+:::
+
+::: {.column width="50%" .fragment .fade-in fragment-index=3}
+
+during model manipulation
+
+![](/archive/figures/kite2.webp)
+
+:::
+
+::::
+
+---
+
+## Explanations
+
+> Some models explain. But how can they fulfill this function given that they typically involve idealizations? Do these models explain despite or because of the idealizations they involve? And what kind of explanation do models provide?
+
+---
+
+## Causality
+
+:::: {.columns}
+
+::: {.column width="50%" .fragment .fade-in fragment-index=2}
+the causal relations between facts or processes does the explanatory work
+
+
+<br>
+
+explanations:  
+information about patterns of **counterfactual** dependence between what is explaining and what is being explained
+:::
+
+::: {.column width="50%" .fragment .fade-in fragment-index=4}
+
+![](/archive/figures/what-if-dino.png)
+
+:::
+
+::::
+
+
+::: {.notes}
+enable us to see what sort of difference it would have made for the explanandum if the factors cited in the explanans had been different in various possible ways.
+:::
+
+---
+
+### But why do models play such a crucial role in the understanding of a subject matter?
+
+:::: {.columns}
+
+::: {.column width="70%" .fragment .fade-in fragment-index=2}
+Elgin (2017)
+
+> this is not despite, but *because*, of models being literally false. False models as “**felicitous falsehoods**” that occupy center stage in the epistemology of science
+:::
+
+::: {.column width="30%" .fragment .fade-in fragment-index=2}
+![](/archive/figures/elgin-true-enough.jpg){.absolute top="20%" right="0%" width=350}
+:::
+
+::::
+
+<!-- The aim of a model is to come up with a representation that affords an understanding of the phenomena, not one that replicates the phenomena. -->
+
+---
+
+<br>
+
+::: {.r-stack}
+![](/archive/figures/true_enough1.jpg){width=100%}
+
+![](/archive/figures/true_enough2.jpg){.fragment width=100%}
+
+![](/archive/figures/true_enough3.jpg){.fragment width=100%}
+
+![](/archive/figures/true_enough4.jpg){.fragment width=100%}
+
+![](/archive/figures/true_enough5.jpg){.fragment width=100%}
+
+:::
+
+---
+
+<!-- ::: {.hvcentered}
+![](/archive/figures/true_enough5.jpg){width=500}
+::: -->

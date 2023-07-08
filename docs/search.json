@@ -46,21 +46,21 @@
     "href": "talks/models.html#idealized-models",
     "title": "Models",
     "section": "Idealized models",
-    "text": "Idealized models\n\n\n\nAristotelian idealization: neglect stuff\n\n mass\n length\n color\n material\n\nGalilean idealization: distort stuff\n\n point-like mass\n massless string\n no friction"
+    "text": "Idealized models\n\n\n\nAristotelian idealization: neglect stuff\n\n mass\n length\n color\n material\n\n\n\nGalilean idealization: distort stuff\n\n point-like mass\n massless string\n no friction"
   },
   {
-    "objectID": "talks/models.html#toy-minimal-models",
-    "href": "talks/models.html#toy-minimal-models",
+    "objectID": "talks/models.html#toy-models-minimal-models",
+    "href": "talks/models.html#toy-models-minimal-models",
     "title": "Models",
-    "section": "Toy + Minimal models",
-    "text": "Toy + Minimal models"
+    "section": "Toy models + Minimal models",
+    "text": "Toy models + Minimal models"
   },
   {
     "objectID": "talks/models.html#phenomenological-models",
     "href": "talks/models.html#phenomenological-models",
     "title": "Models",
     "section": "Phenomenological models",
-    "text": "Phenomenological models\n observable properties\n hidden mechanisms"
+    "text": "Phenomenological models\n\n observable properties\n hidden mechanisms\n\n\n\n\n\n\nSpeaker notes go here."
   },
   {
     "objectID": "talks/models.html#exploratory-models",
@@ -74,14 +74,21 @@
     "href": "talks/models.html#models-of-data",
     "title": "Models",
     "section": "Models of data",
-    "text": "Models of data\n data cleaning\n data munging\n smoothing, etc\n\n# exclude rows with missing values\ndf.dropna()\n# resample into daily freq, take average, and forward fill gaps\ndf.resample('D').mean().ffill()\n# 7-day running average\ndf.rolling(7, center=True).mean()"
+    "text": "Models of data\n\n data cleaning\n data munging\n smoothing, etc\n\n# exclude rows with missing values\ndf.dropna()\n# resample into daily freq, take average, and forward fill gaps\ndf.resample('D').mean().ffill()\n# 7-day running average\ndf.rolling(7, center=True).mean()"
   },
   {
-    "objectID": "talks/models.html#learning-about-a-model-happens",
-    "href": "talks/models.html#learning-about-a-model-happens",
+    "objectID": "talks/models.html#explanations",
+    "href": "talks/models.html#explanations",
     "title": "Models",
-    "section": "Learning about a model happens",
-    "text": "Learning about a model happens\n during model construction\n during model manipulation"
+    "section": "Explanations",
+    "text": "Explanations\n\nSome models explain. But how can they fulfill this function given that they typically involve idealizations? Do these models explain despite or because of the idealizations they involve? And what kind of explanation do models provide?"
+  },
+  {
+    "objectID": "talks/models.html#causality",
+    "href": "talks/models.html#causality",
+    "title": "Models",
+    "section": "Causality",
+    "text": "Causality\n\n\nthe causal relations between facts or processes does the explanatory work\n\nexplanations:\ninformation about patterns of counterfactual dependence between what is explaining and what is being explained\n\n\n\n\n\nenable us to see what sort of difference it would have made for the explanandum if the factors cited in the explanans had been different in various possible ways."
   },
   {
     "objectID": "talks/index.html",
@@ -123,7 +130,7 @@
     "href": "index.html",
     "title": "Talks and Posters",
     "section": "",
-    "text": "AI tools for the academy\noptimal control\nbeamer-test\nexported from keynote\nmodels"
+    "text": "AI tools for the academy\noptimal control\nmodels"
   },
   {
     "objectID": "about.html",

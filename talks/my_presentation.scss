@@ -24,8 +24,15 @@ $font-family-sans-serif: Ubuntu, sans-serif !default;
 //     vertical-align: middle;
 // }
 
-.centered {
+.hcentered {
   margin: 0;
   display: flex;
   justify-content: center;
+}
+
+.hvcentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
 }
