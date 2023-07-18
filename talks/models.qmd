@@ -70,6 +70,79 @@ Meaning
 
 ![](/archive/figures/nasa-wind-tunnel-wing-testing-1.jpg){fig-align="center" width="100%"}
 
+
+---
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](/archive/figures/model-gal-gadot.jpg)
+:::
+
+::: {.column width="50%"}
+:::::{.centered-content}
+![](/archive/figures/model-kepler-solar-system.png){.center-image}
+::::: 
+:::
+::::
+---
+
+## Yair's fun etymology break: *model*
+
+
+:::::: {.columns}
+::::::: {.column width="50%"}
+
+::: {.fragment .fade-in}
+::::{.callout-caution  icon=false appearance="default"}
+## latin
+*modus* = measure  
+diminutive *modulus* = measure, standard
+::::
+:::
+
+::: {.fragment .fade-in}
+::::{.callout-caution  icon=false appearance="default"}
+## vulgar latin
+word becomes *modellus*
+::::
+:::
+
+::: {.fragment .fade-in}
+::::{.callout-caution  icon=false appearance="default"}
+## old french
+*modelle*
+::::
+:::
+
+:::::::
+
+::::::: {.column width="50%"}
+
+::: {.fragment .fade-in}
+::::{.callout-note icon=false appearance="default"}
+## originally
+small-scale representation or a standard to be imitated or followed
+::::
+:::
+
+::: {.fragment .fade-in}
+::::{.callout-note icon=false appearance="default"}
+## fashion
+human figures to showcase garments or products
+::::
+:::
+
+::: {.fragment .fade-in}
+::::{.callout-note icon=false appearance="default"}
+## science
+simplified representations of real-world systems
+::::
+:::
+
+:::::::
+::::::
+
 ---
 
 ## Analogical models
@@ -304,7 +377,7 @@ Elgin (2017)
 :::
 
 ---
-
+ 
 <!-- ::: {.hvcentered}
 ![](/archive/figures/true_enough5.jpg){width=500}
 ::: -->

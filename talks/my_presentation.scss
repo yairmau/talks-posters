@@ -34,5 +34,21 @@ $font-family-sans-serif: Ubuntu, sans-serif !default;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  // height: 90%;
 }
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height of the container to viewport height */
+}
+
+.centered-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
