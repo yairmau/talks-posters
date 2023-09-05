@@ -5,3 +5,5 @@ title: "Talks and Posters"
 [AI tools for the academy](talks/AI_academy.html)  
 [optimal control](talks/optimal-stomatal-control-pdf.pdf)  
 [models](talks/models.html)  
+[irreversible salinization](talks/irreversible-salinization.pdf)  
+[HUJI agri](talks/HUJI-agri.pptx)  

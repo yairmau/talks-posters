@@ -1,31 +1,38 @@
 [
   {
-    "objectID": "talks/AI_academy.html#who-said-that-regading-what",
-    "href": "talks/AI_academy.html#who-said-that-regading-what",
-    "title": "AI tools for the academy",
-    "section": "Who said that? Regading what?",
-    "text": "Who said that? Regading what?\n\n\n…this innovation will create forgetfulness in the learners’ souls, because they will not use their memories;\nit gives not truth, but only the appearance of truth;\nthe students will be hearers of many things and will have learned nothing;\nthey will appear to be omniscient and will generally know nothing, having the show of wisdom without the reality.\n\n\n\nSocrates, 5th century BCE, about WRITING"
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   },
   {
-    "objectID": "talks/AI_academy.html#future-of-email-assignments-essays",
-    "href": "talks/AI_academy.html#future-of-email-assignments-essays",
-    "title": "AI tools for the academy",
-    "section": "Future of email / assignments / essays",
-    "text": "Future of email / assignments / essays"
+    "objectID": "talks/test_talk.html#getting-up",
+    "href": "talks/test_talk.html#getting-up",
+    "title": "Stomatal Optimization under Uncertain Climate",
+    "section": "Getting up",
+    "text": "Getting up\nsubtitle\n\nTurn off alarm\nGet out of bed\n\n\\[\nx_{1,2} =\n\\frac{-b\\pm \\sqrt{b^2 -4ac}}{2a}\n\\]"
   },
   {
-    "objectID": "talks/AI_academy.html#future-of-email-assignments-essays-1",
-    "href": "talks/AI_academy.html#future-of-email-assignments-essays-1",
-    "title": "AI tools for the academy",
-    "section": "Future of email / assignments / essays",
-    "text": "Future of email / assignments / essays"
+    "objectID": "talks/test_talk.html#breakfast",
+    "href": "talks/test_talk.html#breakfast",
+    "title": "Stomatal Optimization under Uncertain Climate",
+    "section": "Breakfast",
+    "text": "Breakfast\n\nEat eggs\nDrink coffeex"
   },
   {
-    "objectID": "talks/AI_academy.html#writing-well-thinking-well",
-    "href": "talks/AI_academy.html#writing-well-thinking-well",
-    "title": "AI tools for the academy",
-    "section": "writing well ≠ thinking well",
-    "text": "writing well ≠ thinking well\n\nGonzalo Frasca"
+    "objectID": "talks/test_talk.html#dinner",
+    "href": "talks/test_talk.html#dinner",
+    "title": "Stomatal Optimization under Uncertain Climate",
+    "section": "Dinner",
+    "text": "Dinner\n\n\nLeft column\n\n\nRight column"
+  },
+  {
+    "objectID": "talks/test_talk.html#going-to-sleep",
+    "href": "talks/test_talk.html#going-to-sleep",
+    "title": "Stomatal Optimization under Uncertain Climate",
+    "section": "Going to sleep",
+    "text": "Going to sleep\n\nGet in bed\nCount sheep"
   },
   {
     "objectID": "talks/models.html#scale-models",
@@ -98,6 +105,34 @@
     "text": "Causality\n\n\nthe causal relations between facts or processes does the explanatory work\n\nexplanations:\ninformation about patterns of counterfactual dependence between what is explaining and what is being explained\n\n\n\n\n\nenable us to see what sort of difference it would have made for the explanandum if the factors cited in the explanans had been different in various possible ways."
   },
   {
+    "objectID": "talks/AI_academy.html#who-said-that-regading-what",
+    "href": "talks/AI_academy.html#who-said-that-regading-what",
+    "title": "AI tools for the academy",
+    "section": "Who said that? Regading what?",
+    "text": "Who said that? Regading what?\n\n\n…this innovation will create forgetfulness in the learners’ souls, because they will not use their memories;\nit gives not truth, but only the appearance of truth;\nthe students will be hearers of many things and will have learned nothing;\nthey will appear to be omniscient and will generally know nothing, having the show of wisdom without the reality.\n\n\n\nSocrates, 5th century BCE, about WRITING"
+  },
+  {
+    "objectID": "talks/AI_academy.html#future-of-email-assignments-essays",
+    "href": "talks/AI_academy.html#future-of-email-assignments-essays",
+    "title": "AI tools for the academy",
+    "section": "Future of email / assignments / essays",
+    "text": "Future of email / assignments / essays"
+  },
+  {
+    "objectID": "talks/AI_academy.html#future-of-email-assignments-essays-1",
+    "href": "talks/AI_academy.html#future-of-email-assignments-essays-1",
+    "title": "AI tools for the academy",
+    "section": "Future of email / assignments / essays",
+    "text": "Future of email / assignments / essays"
+  },
+  {
+    "objectID": "talks/AI_academy.html#writing-well-thinking-well",
+    "href": "talks/AI_academy.html#writing-well-thinking-well",
+    "title": "AI tools for the academy",
+    "section": "writing well ≠ thinking well",
+    "text": "writing well ≠ thinking well\n\nGonzalo Frasca"
+  },
+  {
     "objectID": "talks/index.html",
     "href": "talks/index.html",
     "title": "Talks",
@@ -105,45 +140,10 @@
     "text": "let’s see what happens"
   },
   {
-    "objectID": "talks/test_talk.html#getting-up",
-    "href": "talks/test_talk.html#getting-up",
-    "title": "Stomatal Optimization under Uncertain Climate",
-    "section": "Getting up",
-    "text": "Getting up\nsubtitle\n\nTurn off alarm\nGet out of bed\n\n\\[\nx_{1,2} =\n\\frac{-b\\pm \\sqrt{b^2 -4ac}}{2a}\n\\]"
-  },
-  {
-    "objectID": "talks/test_talk.html#breakfast",
-    "href": "talks/test_talk.html#breakfast",
-    "title": "Stomatal Optimization under Uncertain Climate",
-    "section": "Breakfast",
-    "text": "Breakfast\n\nEat eggs\nDrink coffeex"
-  },
-  {
-    "objectID": "talks/test_talk.html#dinner",
-    "href": "talks/test_talk.html#dinner",
-    "title": "Stomatal Optimization under Uncertain Climate",
-    "section": "Dinner",
-    "text": "Dinner\n\n\nLeft column\n\n\nRight column"
-  },
-  {
-    "objectID": "talks/test_talk.html#going-to-sleep",
-    "href": "talks/test_talk.html#going-to-sleep",
-    "title": "Stomatal Optimization under Uncertain Climate",
-    "section": "Going to sleep",
-    "text": "Going to sleep\n\nGet in bed\nCount sheep"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Talks and Posters",
     "section": "",
-    "text": "AI tools for the academy\noptimal control\nmodels"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
+    "text": "AI tools for the academy\noptimal control\nmodels\nirreversible salinization\nHUJI agri"
   }
 ]
