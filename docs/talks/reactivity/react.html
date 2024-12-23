@@ -194,17 +194,18 @@ window.Quarto = {
 <p><span class="math display">\[
 \frac{d\mathbf{x}}{dt} = M \mathbf{x},
 \]</span> where <span class="math inline">\(\mathbf{x}=(x_1,x_2)\)</span> and <span class="math inline">\(M = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}\)</span>.</p>
-<div id="cell-2" class="cell" data-execution_count="1">
+<div id="cell-2" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>import stuff</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.gridspec <span class="im">as</span> gridspec</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.integrate <span class="im">import</span> solve_ivp</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style<span class="op">=</span><span class="st">"ticks"</span>, font_scale<span class="op">=</span><span class="fl">1.5</span>)  <span class="co"># white graphs, with large and legible letters</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># %matplotlib widget</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.gridspec <span class="im">as</span> gridspec</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.integrate <span class="im">import</span> solve_ivp</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style<span class="op">=</span><span class="st">"ticks"</span>, font_scale<span class="op">=</span><span class="fl">1.5</span>)  <span class="co"># white graphs, with large and legible letters</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># %matplotlib widget</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <div id="cell-3" class="cell" data-execution_count="2">
@@ -242,7 +243,7 @@ window.Quarto = {
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>t2 <span class="op">=</span> simulate_trajectory(A2, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-5" class="cell" data-execution_count="4">
+<div id="cell-5" class="cell" data-execution_count="16">
 <details class="code-fold">
 <summary>now let’s plot</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># learn how to configure:</span></span>
@@ -255,89 +256,92 @@ window.Quarto = {
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>          <span class="st">'text.latex.preamble'</span>: <span class="vs">r'\usepackage</span><span class="sc">{amsmath}</span><span class="vs">'</span>,</span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>          }</span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>plt.rcParams.update(params)</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>))</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> gridspec.GridSpec(<span class="dv">2</span>, <span class="dv">2</span>, width_ratios<span class="op">=</span>[<span class="dv">1</span>,<span class="dv">1</span>], height_ratios<span class="op">=</span>[<span class="dv">1</span>,<span class="dv">1</span>])</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>gs.update(left<span class="op">=</span><span class="fl">0.20</span>, right<span class="op">=</span><span class="fl">0.86</span>,top<span class="op">=</span><span class="fl">0.88</span>, bottom<span class="op">=</span><span class="fl">0.13</span>, hspace<span class="op">=</span><span class="fl">0.05</span>, wspace<span class="op">=</span><span class="fl">0.15</span>)</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>ax0 <span class="op">=</span> plt.subplot(gs[<span class="dv">0</span>, <span class="dv">0</span>])</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>ax1 <span class="op">=</span> plt.subplot(gs[<span class="dv">0</span>, <span class="dv">1</span>])</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>ax2 <span class="op">=</span> plt.subplot(gs[<span class="dv">1</span>, :])</span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>density <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> [<span class="fl">0.80</span>]</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>minlength <span class="op">=</span> <span class="fl">0.2</span></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>arrow_color <span class="op">=</span> <span class="dv">3</span> <span class="op">*</span> [<span class="fl">0.7</span>]</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>bright_color1 <span class="op">=</span> <span class="st">"xkcd:hot pink"</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>bright_color2 <span class="op">=</span> <span class="st">"xkcd:cerulean"</span></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="co"># make sure that each axes is square</span></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>ax0.set_aspect(<span class="st">'equal'</span>, <span class="st">'box'</span>)</span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>ax1.set_aspect(<span class="st">'equal'</span>, <span class="st">'box'</span>)</span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>ax0.streamplot(X, Y, system_equations(A1, X, Y)[<span class="dv">0</span>], system_equations(A1, X, Y)[<span class="dv">1</span>],</span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>              density<span class="op">=</span>density, color<span class="op">=</span>arrow_color, arrowsize<span class="op">=</span><span class="fl">1.5</span>,</span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>              linewidth<span class="op">=</span><span class="dv">2</span>,</span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>              minlength<span class="op">=</span>minlength</span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>              )</span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>ax1.streamplot(X, Y, system_equations(A2, X, Y)[<span class="dv">0</span>], system_equations(A2, X, Y)[<span class="dv">1</span>],</span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>              density<span class="op">=</span>density, color<span class="op">=</span>arrow_color, arrowsize<span class="op">=</span><span class="fl">1.5</span>,</span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>              linewidth<span class="op">=</span><span class="dv">2</span>,</span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>              minlength<span class="op">=</span>minlength</span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>              )</span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>ax0.plot(t1.y[<span class="dv">0</span>], t1.y[<span class="dv">1</span>], color<span class="op">=</span>bright_color1, lw<span class="op">=</span><span class="dv">3</span>)</span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>ax1.plot(t2.y[<span class="dv">0</span>], t2.y[<span class="dv">1</span>], color<span class="op">=</span>bright_color2, lw<span class="op">=</span><span class="dv">3</span>)</span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>ax0.plot(t1.y[<span class="dv">0</span>][<span class="op">-</span><span class="dv">1</span>], t1.y[<span class="dv">1</span>][<span class="op">-</span><span class="dv">1</span>], <span class="st">'o'</span>, color<span class="op">=</span>bright_color1, markersize<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>ax1.plot(t2.y[<span class="dv">0</span>][<span class="op">-</span><span class="dv">1</span>], t2.y[<span class="dv">1</span>][<span class="op">-</span><span class="dv">1</span>], <span class="st">'o'</span>, color<span class="op">=</span>bright_color2, markersize<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a><span class="co"># make spines at the origin, put arrow at the end of the axis</span></span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>ax_list <span class="op">=</span> [ax0, ax1]</span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>):</span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>    ax_list[i].spines[<span class="st">'left'</span>].set_position(<span class="st">'zero'</span>)</span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>    ax_list[i].spines[<span class="st">'bottom'</span>].set_position(<span class="st">'zero'</span>)</span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>    ax_list[i].spines[<span class="st">'right'</span>].set_color(<span class="st">'none'</span>)</span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>    ax_list[i].spines[<span class="st">'top'</span>].set_color(<span class="st">'none'</span>)</span>
-<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>    ax_list[i].spines[<span class="st">'left'</span>].set_linewidth(<span class="fl">0.5</span>)</span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>    ax_list[i].spines[<span class="st">'bottom'</span>].set_linewidth(<span class="fl">0.5</span>)</span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ax_list[i].spines['right'].set_linewidth(0.5)</span></span>
-<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ax_list[i].spines['top'].set_linewidth(0.5)</span></span>
-<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>    ax_list[i].xaxis.set_ticks_position(<span class="st">'bottom'</span>)</span>
-<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>    ax_list[i].yaxis.set_ticks_position(<span class="st">'left'</span>)</span>
-<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>    ax_list[i].xaxis.set_tick_params(width<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>    ax_list[i].yaxis.set_tick_params(width<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>ax0.<span class="bu">set</span>(xticks<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>,<span class="dv">3</span>],</span>
-<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>          yticks<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>,<span class="dv">3</span>],</span>
-<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>          xlim<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>, <span class="dv">3</span>],</span>
-<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>          ylim<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>, <span class="dv">3</span>],)</span>
-<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>ax1.<span class="bu">set</span>(xticks<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>,<span class="dv">3</span>],</span>
-<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>          yticks<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>,<span class="dv">3</span>],</span>
-<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>          xlim<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>, <span class="dv">3</span>],</span>
-<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>          ylim<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>, <span class="dv">3</span>])</span>
-<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>ax0.set_xlabel(<span class="vs">r'$x_1$'</span>, loc<span class="op">=</span><span class="st">'right'</span>)</span>
-<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>ax0.set_ylabel(<span class="vs">r'$x_2$'</span>, loc<span class="op">=</span><span class="st">'top'</span>, rotation<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="vs">r'$x_1$'</span>, loc<span class="op">=</span><span class="st">'right'</span>)</span>
-<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>ax1.set_ylabel(<span class="vs">r'$x_2$'</span>, loc<span class="op">=</span><span class="st">'top'</span>, rotation<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a><span class="co"># put on title the respective parameters as matrix, use latex equation</span></span>
-<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a><span class="co"># add pad to title to avoid overlap with x-axis</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co"># matplotlib.rcParams['text.latex.preamble'] = [</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">#     r'\usepackage{amsmath}',</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">#     r'\usepackage{mathtools}']</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>))</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> gridspec.GridSpec(<span class="dv">2</span>, <span class="dv">2</span>, width_ratios<span class="op">=</span>[<span class="dv">1</span>,<span class="dv">1</span>], height_ratios<span class="op">=</span>[<span class="dv">1</span>,<span class="dv">1</span>])</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>gs.update(left<span class="op">=</span><span class="fl">0.20</span>, right<span class="op">=</span><span class="fl">0.86</span>,top<span class="op">=</span><span class="fl">0.88</span>, bottom<span class="op">=</span><span class="fl">0.13</span>, hspace<span class="op">=</span><span class="fl">0.05</span>, wspace<span class="op">=</span><span class="fl">0.15</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>ax0 <span class="op">=</span> plt.subplot(gs[<span class="dv">0</span>, <span class="dv">0</span>])</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>ax1 <span class="op">=</span> plt.subplot(gs[<span class="dv">0</span>, <span class="dv">1</span>])</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>ax2 <span class="op">=</span> plt.subplot(gs[<span class="dv">1</span>, :])</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>density <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> [<span class="fl">0.80</span>]</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>minlength <span class="op">=</span> <span class="fl">0.2</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>arrow_color <span class="op">=</span> <span class="dv">3</span> <span class="op">*</span> [<span class="fl">0.7</span>]</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>bright_color1 <span class="op">=</span> <span class="st">"xkcd:hot pink"</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>bright_color2 <span class="op">=</span> <span class="st">"xkcd:cerulean"</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="co"># make sure that each axes is square</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>ax0.set_aspect(<span class="st">'equal'</span>, <span class="st">'box'</span>)</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>ax1.set_aspect(<span class="st">'equal'</span>, <span class="st">'box'</span>)</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>ax0.streamplot(X, Y, system_equations(A1, X, Y)[<span class="dv">0</span>], system_equations(A1, X, Y)[<span class="dv">1</span>],</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>              density<span class="op">=</span>density, color<span class="op">=</span>arrow_color, arrowsize<span class="op">=</span><span class="fl">1.5</span>,</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>              linewidth<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>              minlength<span class="op">=</span>minlength</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>              )</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>ax1.streamplot(X, Y, system_equations(A2, X, Y)[<span class="dv">0</span>], system_equations(A2, X, Y)[<span class="dv">1</span>],</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>              density<span class="op">=</span>density, color<span class="op">=</span>arrow_color, arrowsize<span class="op">=</span><span class="fl">1.5</span>,</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>              linewidth<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>              minlength<span class="op">=</span>minlength</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>              )</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>ax0.plot(t1.y[<span class="dv">0</span>], t1.y[<span class="dv">1</span>], color<span class="op">=</span>bright_color1, lw<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>ax1.plot(t2.y[<span class="dv">0</span>], t2.y[<span class="dv">1</span>], color<span class="op">=</span>bright_color2, lw<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>ax0.plot(t1.y[<span class="dv">0</span>][<span class="op">-</span><span class="dv">1</span>], t1.y[<span class="dv">1</span>][<span class="op">-</span><span class="dv">1</span>], <span class="st">'o'</span>, color<span class="op">=</span>bright_color1, markersize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>ax1.plot(t2.y[<span class="dv">0</span>][<span class="op">-</span><span class="dv">1</span>], t2.y[<span class="dv">1</span>][<span class="op">-</span><span class="dv">1</span>], <span class="st">'o'</span>, color<span class="op">=</span>bright_color2, markersize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a><span class="co"># make spines at the origin, put arrow at the end of the axis</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>ax_list <span class="op">=</span> [ax0, ax1]</span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>):</span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>    ax_list[i].spines[<span class="st">'left'</span>].set_position(<span class="st">'zero'</span>)</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>    ax_list[i].spines[<span class="st">'bottom'</span>].set_position(<span class="st">'zero'</span>)</span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>    ax_list[i].spines[<span class="st">'right'</span>].set_color(<span class="st">'none'</span>)</span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>    ax_list[i].spines[<span class="st">'top'</span>].set_color(<span class="st">'none'</span>)</span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>    ax_list[i].spines[<span class="st">'left'</span>].set_linewidth(<span class="fl">0.5</span>)</span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>    ax_list[i].spines[<span class="st">'bottom'</span>].set_linewidth(<span class="fl">0.5</span>)</span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ax_list[i].spines['right'].set_linewidth(0.5)</span></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ax_list[i].spines['top'].set_linewidth(0.5)</span></span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>    ax_list[i].xaxis.set_ticks_position(<span class="st">'bottom'</span>)</span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>    ax_list[i].yaxis.set_ticks_position(<span class="st">'left'</span>)</span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>    ax_list[i].xaxis.set_tick_params(width<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>    ax_list[i].yaxis.set_tick_params(width<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>ax0.<span class="bu">set</span>(xticks<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>,<span class="dv">3</span>],</span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>          yticks<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>,<span class="dv">3</span>],</span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>          xlim<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>, <span class="dv">3</span>],</span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>          ylim<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>, <span class="dv">3</span>],)</span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>ax1.<span class="bu">set</span>(xticks<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>,<span class="dv">3</span>],</span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>          yticks<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>,<span class="dv">3</span>],</span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>          xlim<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>, <span class="dv">3</span>],</span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>          ylim<span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>, <span class="dv">3</span>])</span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>ax0.set_xlabel(<span class="vs">r'$x_1$'</span>, loc<span class="op">=</span><span class="st">'right'</span>)</span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>ax0.set_ylabel(<span class="vs">r'$x_2$'</span>, loc<span class="op">=</span><span class="st">'top'</span>, rotation<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="vs">r'$x_1$'</span>, loc<span class="op">=</span><span class="st">'right'</span>)</span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a>ax1.set_ylabel(<span class="vs">r'$x_2$'</span>, loc<span class="op">=</span><span class="st">'top'</span>, rotation<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a>ax0.set_title(<span class="vs">r'$M_1=\begin</span><span class="sc">{bmatrix}</span><span class="vs"> -1 &amp; 1 \\ 0 &amp; -2 \end</span><span class="sc">{bmatrix}</span><span class="vs">$'</span>, pad<span class="op">=</span><span class="dv">40</span>)</span>
-<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="vs">r'$M_2=\begin</span><span class="sc">{bmatrix}</span><span class="vs"> -1 &amp; 8 \\ 0 &amp; -2 \end</span><span class="sc">{bmatrix}</span><span class="vs">$'</span>, pad<span class="op">=</span><span class="dv">40</span>)</span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a><span class="co"># put on title the respective parameters as matrix, use latex equation</span></span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a><span class="co"># add pad to title to avoid overlap with x-axis</span></span>
 <span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a>L2_one <span class="op">=</span> np.sqrt(t1.y[<span class="dv">0</span>]<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> t1.y[<span class="dv">1</span>]<span class="op">**</span><span class="dv">2</span>)</span>
-<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a>L2_two <span class="op">=</span> np.sqrt(t2.y[<span class="dv">0</span>]<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> t2.y[<span class="dv">1</span>]<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a>ax0.set_title(<span class="vs">r'$M_1=\begin</span><span class="sc">{bmatrix}</span><span class="vs"> -1 &amp; 1 \\ 0 &amp; -2 \end</span><span class="sc">{bmatrix}</span><span class="vs">$'</span>, pad<span class="op">=</span><span class="dv">40</span>)</span>
+<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="vs">r'$M_2=\begin</span><span class="sc">{bmatrix}</span><span class="vs"> -1 &amp; 8 \\ 0 &amp; -2 \end</span><span class="sc">{bmatrix}</span><span class="vs">$'</span>, pad<span class="op">=</span><span class="dv">40</span>)</span>
 <span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a>ax2.plot(t1.t, L2_one, color<span class="op">=</span>bright_color1, lw<span class="op">=</span><span class="dv">3</span>, label<span class="op">=</span><span class="st">'M1'</span>)</span>
-<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a>ax2.plot(t2.t, L2_two, color<span class="op">=</span>bright_color2, lw<span class="op">=</span><span class="dv">3</span>, label<span class="op">=</span><span class="st">'M2'</span>)</span>
-<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a>ax2.legend(loc<span class="op">=</span><span class="st">'center'</span>)</span>
-<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>ax2.<span class="bu">set</span>(xlim<span class="op">=</span>[<span class="dv">0</span>,<span class="dv">8</span>],</span>
-<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>        xlabel<span class="op">=</span><span class="st">'time'</span>,)</span>
-<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="st">'distance from</span><span class="ch">\n</span><span class="st">the origin</span><span class="ch">\n\n</span><span class="st">'</span> <span class="op">+</span> <span class="vs">r"$\sqrt{x_1^2+x_2^2}$"</span>, labelpad<span class="op">=</span><span class="dv">60</span>, rotation<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a><span class="co"># only left and bottom spines</span></span>
-<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>ax2.spines[<span class="st">'right'</span>].set_color(<span class="st">'none'</span>)</span>
-<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a>ax2.spines[<span class="st">'top'</span>].set_color(<span class="st">'none'</span>)</span>
-<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a>L2_one <span class="op">=</span> np.sqrt(t1.y[<span class="dv">0</span>]<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> t1.y[<span class="dv">1</span>]<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a>L2_two <span class="op">=</span> np.sqrt(t2.y[<span class="dv">0</span>]<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> t2.y[<span class="dv">1</span>]<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>ax2.plot(t1.t, L2_one, color<span class="op">=</span>bright_color1, lw<span class="op">=</span><span class="dv">3</span>, label<span class="op">=</span><span class="st">'M1'</span>)</span>
+<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>ax2.plot(t2.t, L2_two, color<span class="op">=</span>bright_color2, lw<span class="op">=</span><span class="dv">3</span>, label<span class="op">=</span><span class="st">'M2'</span>)</span>
+<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>ax2.legend(loc<span class="op">=</span><span class="st">'center'</span>)</span>
+<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>ax2.<span class="bu">set</span>(xlim<span class="op">=</span>[<span class="dv">0</span>,<span class="dv">6</span>],</span>
+<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>        xlabel<span class="op">=</span><span class="st">'time'</span>,)</span>
+<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="st">'distance from</span><span class="ch">\n</span><span class="st">the origin</span><span class="ch">\n\n</span><span class="st">'</span> <span class="op">+</span> <span class="vs">r"$\lVert x\rVert =\sqrt{x_1^2+x_2^2}$"</span>, labelpad<span class="op">=</span><span class="dv">70</span>, rotation<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a><span class="co"># only left and bottom spines</span></span>
+<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a>ax2.spines[<span class="st">'right'</span>].set_color(<span class="st">'none'</span>)</span>
+<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>ax2.spines[<span class="st">'top'</span>].set_color(<span class="st">'none'</span>)</span>
+<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -347,6 +351,10 @@ window.Quarto = {
 </div>
 </div>
 </div>
+<blockquote class="blockquote">
+<p>The question arises whether asymptotic behavior adequately characterizes the response to perturbations. Because of the short duration of many ecological experiments, transients may dominate the observed responses to perturbations. In addition, transient responses may be at least as important as asymptotic responses. Managers charged with ecosystem restoration, for example, are likely to be interested in both the short-term and long-term effects of their manipulations, particularly if the short-term effects can be large.</p>
+</blockquote>
+<p><a href="https://doi.org/10.1890/0012-9658(1997)078%5B0653:ATRFMT%5D2.0.CO;2">Source: Neubert &amp; Caswell, 1997, <em>Ecology</em></a></p>
 
 
 </section>
