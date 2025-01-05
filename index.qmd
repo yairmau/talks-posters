@@ -8,3 +8,4 @@ title: "Talks and Posters"
 [irreversible salinization](talks/irreversible-salinization.pdf)  
 [HUJI agri](talks/HUJI-agri.pptx)  
 [reactivity](talks/reactivity/react.ipynb)  
+[AI-2025](talks/AI-2025)  

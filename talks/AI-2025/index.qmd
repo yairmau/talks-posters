@@ -1,0 +1,125 @@
+---
+title: "Give AI the stuff you don’t wanna do"
+subtitle: "and more"
+author: "Yair mau"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    code-copy: true
+    preview-links: true
+    css: AI-styles.css
+    include-in-header:
+      text: |
+        <style> 
+          .centered-image {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: 50%;
+        }
+        </style>
+---
+
+## Ethan Mollick's book
+
+
+![](book-mollick.jpg){.absolute left=0 right=0 bottom=-100 top=0 height="80%" style="margin: auto auto;"}
+
+---
+
+## Ethan Mollick's book
+
+![](book-TOC.png){.absolute left=0 right=0 bottom=-100 top=0 height="80%" style="margin: auto auto;"}
+
+---
+
+## Ethan Mollick
+
+![](ethan1.png){.absolute left=0 right=0 bottom=-100 top=0 height="70%" style="margin: auto auto;"}
+
+---
+
+## Ethan Mollick
+
+![](ethan2.png){.absolute left=0 right=0 bottom=-100 top=0 height="70%" style="margin: auto auto;"}
+
+---
+
+## Co-Intelligence
+
+<br>
+
+The idea of using AI as a **collaborator** to achieve a human goal.
+
+---
+
+## 4 co-intelligent principles
+
+<br>
+
+1. always invite AI to the table
+1. be the human in the loop
+1. treat AI like a person (but tell it what kind of person it is)
+1. assume this is the worst AI you will ever use
+
+
+
+---
+
+## always invite AI to the table
+
+![](principle1.webp){.absolute left=0 right=0 bottom=-100 top=0 height="60%" style="margin: auto auto;"}
+
+---
+
+## be the human in the loop
+
+![](principle2.webp){.absolute left=0 right=0 bottom=-100 top=0 height="60%" style="margin: auto auto;"}
+
+
+---
+
+## treat AI like a person
+#### (but tell it what kind of person it is)
+
+![](principle3.webp){.absolute left=0 right=0 bottom=-100 top=0 height="60%" style="margin: auto auto;"}
+
+---
+
+## assume this is the worst AI you will ever use
+
+![](principle4.webp){.absolute left=0 right=0 bottom=-100 top=0 height="60%" style="margin: auto auto;"}
+
+
+
+---
+
+## More
+#### all by Ethan Mollick, of course
+
+
+---
+
+[\<Getting started with AI: Good enough prompting\>](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough){target="_blank"}
+
+![](good-enough.jpg){.absolute left=0 right=0 bottom=-100 top=0 height="70%" style="margin: auto auto;"}
+
+---
+
+[\<15 Times to use AI, and 5 Not to\>](https://www.oneusefulthing.org/p/15-times-to-use-ai-and-5-not-to)
+
+![](15-uses.jpg){.absolute left=0 right=0 bottom=-100 top=0 height="70%" style="margin: auto auto;"}
+
+---
+
+[\<Centaurs and Cyborgs on the Jagged Frontier\>](https://www.oneusefulthing.org/p/centaurs-and-cyborgs-on-the-jagged)
+
+![](centaur-cyborg.jpeg){.absolute left=0 right=0 bottom=-100 top=0 height="80%" style="margin: auto auto;"}
+
+---
+
+## voice mode

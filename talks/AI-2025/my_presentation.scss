@@ -1,0 +1,54 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// fonts
+$font-family-sans-serif: Ubuntu, sans-serif !default;
+
+.title {
+    font-size: 2em !important;
+  }
+.subtitle {
+    font-size: 1.5em !important;
+  }
+
+.reveal .controls .navigate-down, .reveal .controls .navigate-up {
+    display: none;
+}
+
+// .center {
+//     text-align: center;
+// }
+
+// .vcenter {
+//     vertical-align: middle;
+// }
+
+.hcentered {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hvcentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: 90%;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height of the container to viewport height */
+}
+
+.centered-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
