@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{graphicx}
+
+\title{Notes from Brutsaert: Hydrology -- An Introduction}
+\author{}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{Page 123}
+	
+	\subsection*{Energy Balance Equation}
+	The energy balance equation is given as:
+	\begin{equation}
+		L_e E + H = Q_n \tag{4.13}
+	\end{equation}
+	where:
+	\begin{itemize}
+		\item $E$ = evaporation,
+		\item $H$ = sensible heat flux into the air,
+		\item $L_e$ = latent heat of evaporation (\textit{refer to Table 2.4, $2.466 \times 10^6$ J/kg}),
+		\item $Q_n$ = available energy flux density.
+	\end{itemize}
+	
+	From this equation:
+	\begin{align*}
+		Q_n e &= \frac{Q_n}{L_e} \quad \text{(``equivalent'' fluxes)}, \\
+		H_e &= \frac{H}{L_e}.
+	\end{align*}
+	
+	Thus, the energy equation can also be written as:
+	\[
+	E + H_e = Q_n e.
+	\]
+	
+	\subsection*{Components of $Q_n$}
+	The available energy flux density, $Q_n$, can be expanded as:
+	\begin{equation}
+		Q_n = R_n - G + L_p f + A_h + \frac{\partial W}{\partial t} \tag{4.14}
+	\end{equation}
+	where:
+	\begin{itemize}
+		\item $R_n$ = net radiation flux density,
+		\item $G$ = heat flux density into the ground,
+		\item $L_p f$ = thermal energy flux related to the transpiration of CO\textsubscript{2},
+		\item $A_h$ = energy absorption by the canopy,
+		\item $\frac{\partial W}{\partial t}$ = change in heat storage over time.
+	\end{itemize}
+	
+	The terms of this equation represent:
+	\begin{itemize}
+		\item $R_n - G$: net radiation minus the heat flux into the ground,
+		\item $L_p f$: contribution of CO\textsubscript{2} flux,
+		\item $A_h$: atmospheric heating,
+		\item $\frac{\partial W}{\partial t}$: heat storage in the system.
+	\end{itemize}
+	
+	\subsection*{Bowen Ratio}
+	The Bowen ratio, $B_o$, is defined as:
+	\begin{equation}
+		B_o = \frac{\gamma}{\Delta} \left[ 1 - \frac{e_a^* - \bar{e_a}}{e_s^* - \bar{e_a}} \right] \tag{4.21}
+	\end{equation}
+	where:
+	\begin{itemize}
+		\item $\gamma = \frac{C_p p}{0.622 L_e}$: the psychrometric constant,
+		\item $\Delta = \frac{de_s^*}{dT}$: slope of the saturation water vapor pressure curve at $T_a$,
+		\item $e_s^*$ = saturation water vapor pressure,
+		\item $\bar{e_a}$ = mean vapor pressure,
+		\item $e_a^*$ = actual water vapor pressure at air temperature.
+	\end{itemize}
+	
+	The Bowen ratio describes the ratio of sensible heat flux to latent heat flux and plays a critical role in energy balance studies.
+	
+	\subsection*{Key Definitions and Constants}
+	\begin{itemize}
+		\item $e_s^*$: saturation water vapor pressure at the surface,
+		\item $\bar{e_a}$: mean vapor pressure in the atmosphere,
+		\item $e_a^*$: saturation water vapor pressure at air temperature,
+		\item $\gamma = \frac{C_p p}{0.622 L_e}$: psychrometric constant (specific heat capacity of air, $C_p$, at constant pressure $p$),
+		\item $\Delta = \frac{e_s^* - e_a^*}{T_s - T_a}$: slope of the saturation water vapor pressure curve.
+	\end{itemize}
+	
+	\subsection*{Saturation Water Vapor Pressure Curve}
+	The curve of saturation water vapor pressure as a function of temperature is critical for hydrological studies. Refer to Page 28 (Equation 2.14) and Figure 2.1 for details:
+	\[
+	e^*(T) \quad \text{versus temperature}.
+	\]
+	
+	The slope of this curve, $\Delta$, is defined as:
+	\[
+	\Delta = \frac{de_s^*}{dT}.
+	\]
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.6\textwidth]{example-graph-placeholder.png} % Replace with actual graph if available
+		\caption{Saturation water vapor pressure curve (Figure 2.1).}
+	\end{figure}
+	
+\end{document}

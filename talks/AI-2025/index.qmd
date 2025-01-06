@@ -20,12 +20,18 @@ format:
             bottom: 0;
             margin: auto;
             height: 50%;
-        }
+          }
+          .side-by-side {
+            display: flex;
+            justify-content: space-between;
+          }
+          .side-by-side img {
+            width: 48%;
+          }
         </style>
 ---
 
 ## Ethan Mollick's book
-
 
 ![](book-mollick.jpg){.absolute left=0 right=0 bottom=-100 top=0 height="80%" style="margin: auto auto;"}
 
@@ -61,11 +67,17 @@ The idea of using AI as a **collaborator** to achieve a human goal.
 
 <br>
 
-1. always invite AI to the table
-1. be the human in the loop
-1. treat AI like a person (but tell it what kind of person it is)
-1. assume this is the worst AI you will ever use
-
+{{< iconify mdi table-chair >}} always invite AI to the table  
+ 
+::: {.fragment}
+{{< iconify mdi human-greeting >}} be the human in the loop  
+:::
+::: {.fragment}
+{{< iconify game-icons cook >}} treat AI like a person (but tell it what kind of person it is)  
+:::
+::: {.fragment}
+{{< iconify mynaui rocket-solid >}} assume this is the worst AI you will ever use
+:::
 
 
 ---
@@ -122,4 +134,48 @@ The idea of using AI as a **collaborator** to achieve a human goal.
 
 ---
 
-## voice mode
+## {{< iconify tabler microphone-filled >}}  Voice mode
+
+Possible uses:
+
+* Chat about something you want to learn about
+
+::: {.fragment}
+* Have your kids use it for homework
+:::
+::: {.fragment}
+* When you're not sure how to explain something, just talk to it. Give it your random thoughts and the AI will return a sensible paragraph to you
+:::
+
+---
+
+## {{< iconify fluent draw-text-24-filled >}} Transcribe hand-written text
+
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+![](whiteboard1.png){width="80%"}
+:::
+::: {.column width="50%" .fragment }
+![](whiteboard2.png){width="100%"}
+:::
+::::::::::::::
+
+---
+
+## {{< iconify fluent draw-text-24-filled >}} Transcribe hand-written text
+
+
+::: {.r-stack}
+![](handwritten1.png){.fragment .absolute left=0 right=0 bottom=-100 top=0 height="90%" style="margin: auto auto;"}
+
+![](handwritten2.png){.fragment .absolute left=0 right=0 bottom=-100 top=0 height="90%" style="margin: auto auto;"}
+:::
+
+<!-- :::::::::::::: {.columns}
+::: {.column width="50%"} 
+![](handwritten1.png){width="80%"}
+:::
+::: {.column width="50%" .fragment }
+![](handwritten2.png){width="100%"}
+:::
+:::::::::::::: -->

@@ -207,7 +207,7 @@
     "href": "talks/AI-2025/index.html#co-intelligent-principles",
     "title": "Give AI the stuff you don’t wanna do",
     "section": "4 co-intelligent principles",
-    "text": "4 co-intelligent principles\n\n\nalways invite AI to the table\nbe the human in the loop\ntreat AI like a person (but tell it what kind of person it is)\nassume this is the worst AI you will ever use"
+    "text": "4 co-intelligent principles\n\n always invite AI to the table\n\n be the human in the loop\n\n\n treat AI like a person (but tell it what kind of person it is)\n\n\n assume this is the worst AI you will ever use"
   },
   {
     "objectID": "talks/AI-2025/index.html#always-invite-ai-to-the-table",
@@ -248,8 +248,8 @@
     "objectID": "talks/AI-2025/index.html#voice-mode",
     "href": "talks/AI-2025/index.html#voice-mode",
     "title": "Give AI the stuff you don’t wanna do",
-    "section": "voice mode",
-    "text": "voice mode"
+    "section": " Voice mode",
+    "text": "Voice mode\nPossible uses:\n\nChat about something you want to learn about\n\n\n\nHave your kids use it for homework\n\n\n\n\nWhen you’re not sure how to explain something, just talk to it. Give it your random thoughts and the AI will return a sensible paragraph to you"
   },
   {
     "objectID": "index.html",
@@ -257,5 +257,33 @@
     "title": "Talks and Posters",
     "section": "",
     "text": "AI tools for the academy\noptimal control\nmodels\nirreversible salinization\nHUJI agri\nreactivity\nAI-2025"
+  },
+  {
+    "objectID": "talks/AI-2025/index.html#ocr-optical-character-recognition",
+    "href": "talks/AI-2025/index.html#ocr-optical-character-recognition",
+    "title": "Give AI the stuff you don’t wanna do",
+    "section": "OCR (Optical Character Recognition)",
+    "text": "OCR (Optical Character Recognition)"
+  },
+  {
+    "objectID": "talks/AI-2025/index.html#transcribe-hand-written-text",
+    "href": "talks/AI-2025/index.html#transcribe-hand-written-text",
+    "title": "Give AI the stuff you don’t wanna do",
+    "section": " Transcribe hand-written text",
+    "text": "Transcribe hand-written text"
+  },
+  {
+    "objectID": "talks/AI-2025/index.html#transcribe-hand-written-text-1",
+    "href": "talks/AI-2025/index.html#transcribe-hand-written-text-1",
+    "title": "Give AI the stuff you don’t wanna do",
+    "section": " Transcribe hand-written text",
+    "text": "Transcribe hand-written text"
+  },
+  {
+    "objectID": "talks/AI-2025/index.html#transcribe-hand-written-text-2",
+    "href": "talks/AI-2025/index.html#transcribe-hand-written-text-2",
+    "title": "Give AI the stuff you don’t wanna do",
+    "section": " Transcribe hand-written text 2",
+    "text": "Transcribe hand-written text 2"
   }
 ]
