@@ -238,32 +238,18 @@
     "text": "assume this is the worst AI you will ever use"
   },
   {
-    "objectID": "talks/AI-2025/index.html#more",
-    "href": "talks/AI-2025/index.html#more",
+    "objectID": "talks/AI-2025/index.html#if-you-dont-wanna-read-the-book",
+    "href": "talks/AI-2025/index.html#if-you-dont-wanna-read-the-book",
     "title": "Give AI the stuff you don’t wanna do",
-    "section": "More",
-    "text": "More\nall by Ethan Mollick, of course"
+    "section": "If you don’t wanna read the book…",
+    "text": "If you don’t wanna read the book…\n … you can read a few blog posts by Mollick"
   },
   {
     "objectID": "talks/AI-2025/index.html#voice-mode",
     "href": "talks/AI-2025/index.html#voice-mode",
     "title": "Give AI the stuff you don’t wanna do",
     "section": " Voice mode",
-    "text": "Voice mode\nPossible uses:\n\nChat about something you want to learn about\n\n\n\nHave your kids use it for homework\n\n\n\n\nWhen you’re not sure how to explain something, just talk to it. Give it your random thoughts and the AI will return a sensible paragraph to you"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Talks and Posters",
-    "section": "",
-    "text": "AI tools for the academy\noptimal control\nmodels\nirreversible salinization\nHUJI agri\nreactivity\nAI-2025"
-  },
-  {
-    "objectID": "talks/AI-2025/index.html#ocr-optical-character-recognition",
-    "href": "talks/AI-2025/index.html#ocr-optical-character-recognition",
-    "title": "Give AI the stuff you don’t wanna do",
-    "section": "OCR (Optical Character Recognition)",
-    "text": "OCR (Optical Character Recognition)"
+    "text": "Voice mode\nlive chat:\n\nChat about something you want to learn about\n\n\n\nHave your kids use it for homework\n\n\n\nvoice input instead of text input:\n\nWhen you’re not sure how to explain something, just talk to it. Give it your random thoughts and the AI will return a sensible paragraph to you"
   },
   {
     "objectID": "talks/AI-2025/index.html#transcribe-hand-written-text",
@@ -283,7 +269,28 @@
     "objectID": "talks/AI-2025/index.html#transcribe-hand-written-text-2",
     "href": "talks/AI-2025/index.html#transcribe-hand-written-text-2",
     "title": "Give AI the stuff you don’t wanna do",
-    "section": " Transcribe hand-written text 2",
-    "text": "Transcribe hand-written text 2"
+    "section": " Transcribe hand-written text",
+    "text": "Transcribe hand-written text\nDownload PDF file."
+  },
+  {
+    "objectID": "talks/AI-2025/index.html#its-better-to-know-how-to-code",
+    "href": "talks/AI-2025/index.html#its-better-to-know-how-to-code",
+    "title": "Give AI the stuff you don’t wanna do",
+    "section": " It’s better to know how to code",
+    "text": "It’s better to know how to code\nRight now, there is no good way of exporting to proprietary formats, e.g. Word, Excel, etc.\nYou can use instead\n\nmarkdown\nLaTeX\nother Open Source formats"
+  },
+  {
+    "objectID": "talks/AI-2025/index.html#the-in-the-room",
+    "href": "talks/AI-2025/index.html#the-in-the-room",
+    "title": "Give AI the stuff you don’t wanna do",
+    "section": "The  in the room",
+    "text": "The  in the room\nWe did not discuss today is the impact of LLMs on learning\n\n reading\n writing\n programming\n…\n thinking"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Talks and Posters",
+    "section": "",
+    "text": "AI tools for the academy\noptimal control\nmodels\nirreversible salinization\nHUJI agri\nreactivity\nAI-2025"
   }
 ]
