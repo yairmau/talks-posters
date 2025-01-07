@@ -70,26 +70,24 @@ The idea of using AI as a **collaborator** to achieve a human goal.
 
 ## 4 co-intelligent principles
 
-<br>
-
-{{< iconify mdi invite >}} always invite AI to the table  
- 
-::: {.fragment}
-{{< iconify mdi human-greeting >}} be the human in the loop  
+:::::::::::::: {.columns style="font-size: 5em;"}
+::: {.column width="50%"}
+{{< iconify mdi invite >}}  
+{{< iconify game-icons cook >}}
 :::
-::: {.fragment}
-{{< iconify game-icons cook >}} treat AI like a person (but tell it what kind of person it is)  
+::: {.column width="50%"}
+{{< iconify mdi human-greeting >}}  
+{{< iconify mynaui rocket-solid >}} 
 :::
-::: {.fragment}
-{{< iconify mynaui rocket-solid >}} assume this is the worst AI you will ever use
-:::
-
+::::::::::::::
 
 ---
 
 ## always invite AI to the table
 
-![](principle1.webp){.absolute left=0 right=0 bottom=-100 top=0 height="60%" style="margin: auto auto;"}
+:::{.center .r-stack style="font-size: 8em;"}
+{{< iconify mdi invite >}}
+:::
 
 ---
 
@@ -128,7 +126,9 @@ Learn the AI's strengths and weaknesses through continuous experimentation.
 
 ## be the human in the loop
 
-![](principle2.webp){.absolute left=0 right=0 bottom=-100 top=0 height="60%" style="margin: auto auto;"}
+:::{.center .r-stack style="font-size: 8em;"}
+{{< iconify mdi human-greeting >}}
+:::
 
 ---
 
@@ -136,25 +136,34 @@ Learn the AI's strengths and weaknesses through continuous experimentation.
 
 You need to provide 
 
+:::{.r-stack}
 * crucial oversight
 * your unique perspective
 * critical thinking skills
 * ethical considerations
+:::
+
+
 
 Beware of hallucinations or of the AI wanting to give you BS answers just to keep you happy.
 
 ---
 
+
 ## treat AI like a person
 #### (but tell it what kind of person it is)
 
-![](principle3.webp){.absolute left=0 right=0 bottom=-100 top=0 height="60%" style="margin: auto auto;"}
+:::{.center .r-stack style="font-size: 8em;"}
+{{< iconify game-icons cook >}}
+:::
+
 
 ---
 
 ## assume this is the worst AI you will ever use
-
-![](principle4.webp){.absolute left=0 right=0 bottom=-100 top=0 height="60%" style="margin: auto auto;"}
+:::{.center .r-stack style="font-size: 8em;"}
+{{< iconify mynaui rocket-solid >}} 
+:::
 
 ---
 
@@ -175,7 +184,7 @@ Beware of hallucinations or of the AI wanting to give you BS answers just to kee
 :::
 
 <video
-  controls width="70%" height="auto"
+  controls width="70%" height="auto" style="display: block; margin-left: auto; margin-right: auto;"
   src="https://thefutureofpublishing.com/new/wp-content/uploads/2024/08/otter-on-a-plane-using-wifi-comp-4.mp4"
 ></video>
 
@@ -183,6 +192,7 @@ Beware of hallucinations or of the AI wanting to give you BS answers just to kee
 ---
 
 ## If you don't wanna read the book...
+#### (though you should, it's quite good)
 
 <br>
 ... you can read a few blog posts by Mollick
@@ -251,15 +261,31 @@ voice input instead of text input:
 
 ---
 
-## {{< iconify mingcute code-line >}} It's better to know how to code
+## {{< iconify mingcute code-line >}} It's better to use code
 
 Right now, there is no good way of exporting to proprietary formats, e.g. Word, Excel, etc.
 
 You can use instead
 
+:::{.r-stack}
 * markdown
 * LaTeX
 * other **Open Source** formats
+:::
+
+
+---
+
+## Integration is {{< iconify vaadin key >}} 
+
+:::{.r-stack}
+* GitHub Copilot {{< iconify ri copilot-fill >}} + VS Code {{< iconify nonicons vscode-16 >}}
+* ChatGPT Canvas {{< iconify logos openai-icon >}}
+* Adobe Firefly {{< iconify ic sharp-adobe >}} + Photoshop {{< iconify devicon-plain photoshop >}}
+* Adobe Firefly Video {{< iconify ic sharp-adobe >}} + Premiere Pro {{< iconify devicon-plain premierepro >}}
+* tell me your own experience
+:::
+
 
 ---
 
@@ -269,8 +295,10 @@ You can use instead
 
 <br>
 
+:::{.r-stack}
 {{< iconify ion book >}} reading  
 {{< iconify solar pen-2-bold >}} writing  
 {{< iconify fa-solid laptop-code >}} programming  
 ...  
 {{< iconify hugeicons brain-02 >}} *thinking*
+:::

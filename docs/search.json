@@ -207,7 +207,7 @@
     "href": "talks/AI-2025/index.html#co-intelligent-principles",
     "title": "Give AI the stuff you don’t wanna do",
     "section": "4 co-intelligent principles",
-    "text": "4 co-intelligent principles\n\n always invite AI to the table\n\n be the human in the loop\n\n\n treat AI like a person (but tell it what kind of person it is)\n\n\n assume this is the worst AI you will ever use"
+    "text": "4 co-intelligent principles"
   },
   {
     "objectID": "talks/AI-2025/index.html#always-invite-ai-to-the-table",
@@ -242,7 +242,7 @@
     "href": "talks/AI-2025/index.html#be-the-human-in-the-loop-1",
     "title": "Give AI the stuff you don’t wanna do",
     "section": "be the human in the loop",
-    "text": "be the human in the loop\nYou need to provide\n\ncrucial oversight\nyour unique perspective\ncritical thinking skills\nethical considerations\n\nBeware of hallucinations or of the AI wanting to give you BS answers just to keep you happy."
+    "text": "be the human in the loop\nYou need to provide\n\n\ncrucial oversight\nyour unique perspective\ncritical thinking skills\nethical considerations\n\n\nBeware of hallucinations or of the AI wanting to give you BS answers just to keep you happy."
   },
   {
     "objectID": "talks/AI-2025/index.html#treat-ai-like-a-person",
@@ -277,7 +277,7 @@
     "href": "talks/AI-2025/index.html#if-you-dont-wanna-read-the-book",
     "title": "Give AI the stuff you don’t wanna do",
     "section": "If you don’t wanna read the book…",
-    "text": "If you don’t wanna read the book…\n … you can read a few blog posts by Mollick"
+    "text": "If you don’t wanna read the book…\n(though you should, it’s quite good)\n … you can read a few blog posts by Mollick"
   },
   {
     "objectID": "talks/AI-2025/index.html#voice-mode",
@@ -308,18 +308,25 @@
     "text": "Transcribe hand-written text\nDownload PDF file."
   },
   {
-    "objectID": "talks/AI-2025/index.html#its-better-to-know-how-to-code",
-    "href": "talks/AI-2025/index.html#its-better-to-know-how-to-code",
+    "objectID": "talks/AI-2025/index.html#its-better-to-use-code",
+    "href": "talks/AI-2025/index.html#its-better-to-use-code",
     "title": "Give AI the stuff you don’t wanna do",
-    "section": " It’s better to know how to code",
-    "text": "It’s better to know how to code\nRight now, there is no good way of exporting to proprietary formats, e.g. Word, Excel, etc.\nYou can use instead\n\nmarkdown\nLaTeX\nother Open Source formats"
+    "section": " It’s better to use code",
+    "text": "It’s better to use code\nRight now, there is no good way of exporting to proprietary formats, e.g. Word, Excel, etc.\nYou can use instead\n\n\nmarkdown\nLaTeX\nother Open Source formats"
+  },
+  {
+    "objectID": "talks/AI-2025/index.html#integration-is",
+    "href": "talks/AI-2025/index.html#integration-is",
+    "title": "Give AI the stuff you don’t wanna do",
+    "section": "Integration is ",
+    "text": "Integration is \n\n\nGitHub Copilot  + VS Code \nChatGPT Canvas \nAdobe Firefly  + Photoshop \nAdobe Firefly Video  + Premiere Pro \ntell me your own experience"
   },
   {
     "objectID": "talks/AI-2025/index.html#the-in-the-room",
     "href": "talks/AI-2025/index.html#the-in-the-room",
     "title": "Give AI the stuff you don’t wanna do",
     "section": "The  in the room",
-    "text": "The  in the room\nWe did not discuss today is the impact of LLMs on learning\n\n reading\n writing\n programming\n…\n thinking"
+    "text": "The  in the room\nWe did not discuss today is the impact of LLMs on learning\n\n\n reading\n writing\n programming\n…\n thinking"
   },
   {
     "objectID": "index.html",
