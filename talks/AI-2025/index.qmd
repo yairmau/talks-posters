@@ -93,10 +93,55 @@ The idea of using AI as a **collaborator** to achieve a human goal.
 
 ---
 
+## always invite AI to the table
+
+:::::::::::::: {.columns}
+::: {.column width="40%"}
+
+What is the best next move for {{< iconify ic outline-circle >}}?
+
+![](tic-tac-toe.png){width="100%"}
+:::
+::: {.column width="60%" .fragment style="font-size: 0.7em;"}
+Write a full JavaScript webpage to play tic-tac-toe against the computer; it needs to be completely working code. Here are the rules:
+
+* The computer goes first.
+* The person clicks on squares to make their move.
+* The computer should play perfectly and so never lose.
+* If someone wins, then say who won.
+
+:::
+::::::::::::::
+
+---
+
+## always invite AI to the table
+
+<br>
+
+Identify the **Jagged Frontier of AI**. 
+
+<br>
+Learn the AI's strengths and weaknesses through continuous experimentation. 
+
+---
+
 ## be the human in the loop
 
 ![](principle2.webp){.absolute left=0 right=0 bottom=-100 top=0 height="60%" style="margin: auto auto;"}
 
+---
+
+## be the human in the loop
+
+You need to provide 
+
+* crucial oversight
+* your unique perspective
+* critical thinking skills
+* ethical considerations
+
+Beware of hallucinations or of the AI wanting to give you BS answers just to keep you happy.
 
 ---
 
@@ -111,6 +156,28 @@ The idea of using AI as a **collaborator** to achieve a human goal.
 
 ![](principle4.webp){.absolute left=0 right=0 bottom=-100 top=0 height="60%" style="margin: auto auto;"}
 
+---
+
+## assume this is the worst AI you will ever use
+
+::: {style="font-size: 0.8em;"}
+"Otter on a plane using wifi", **November 2022**
+:::
+
+![](otter1.jpg){.absolute left=0 right=0 bottom=-300 top=0 height="60%" style="margin: auto auto;"}
+
+---
+
+## assume this is the worst AI you will ever use
+
+::: {style="font-size: 0.8em;"}
+"Otter on a plane using wifi", **August 2024** (+22 months)
+:::
+
+<video
+  controls width="70%" height="auto"
+  src="https://thefutureofpublishing.com/new/wp-content/uploads/2024/08/otter-on-a-plane-using-wifi-comp-4.mp4"
+></video>
 
 
 ---
