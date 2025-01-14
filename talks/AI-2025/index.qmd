@@ -36,6 +36,21 @@ format:
         </style>
 ---
 
+## sora.com, 5 minutes of play 
+
+::: {style="font-size: 0.8em;"}
+> in a bucolic farm, we see a zoo, where all the animals are living origami creatures in the style of Robert Lang's creations. the animals move and are each the size of a car: elephant, t-rex, moose, praying mantis
+:::
+
+::: {.fragment}
+<video
+  controls width="65%" height="auto" style="display: block; margin-left: auto; margin-right: auto;"
+  src="20250114_1748_Origami Animal Wonderland_simple_compose_01jhjqzxwaetxa31pa1nzv1pvb.mp4"
+></video>
+:::
+
+---
+
 ## Ethan Mollick's book
 
 ![](book-mollick.jpg){.absolute left=0 right=0 bottom=-100 top=0 height="80%" style="margin: auto auto;"}
@@ -71,11 +86,11 @@ The idea of using AI as a **collaborator** to achieve a human goal.
 ## 4 co-intelligent principles
 
 :::::::::::::: {.columns style="font-size: 5em;"}
-::: {.column width="50%"}
+::: {.column width="50%" style="text-align: center;"}
 {{< iconify mdi invite >}}  
 {{< iconify game-icons cook >}}
 :::
-::: {.column width="50%"}
+::: {.column width="50%" style="text-align: center;"}
 {{< iconify mdi human-greeting >}}  
 {{< iconify mynaui rocket-solid >}} 
 :::
@@ -279,10 +294,11 @@ You can use instead
 ## Integration is {{< iconify vaadin key >}} 
 
 :::{.r-stack}
-* GitHub Copilot {{< iconify ri copilot-fill >}} + VS Code {{< iconify nonicons vscode-16 >}}
+* GitHub Copilot {{< iconify ri copilot-fill >}} + VS Code {{< iconify devicon vscode >}}
+* Gemini {{< iconify lineicons gemini >}} + Google apps {{< iconify logos google-gmail >}} {{< iconify logos google-drive >}} ...
 * ChatGPT Canvas {{< iconify logos openai-icon >}}
-* Adobe Firefly {{< iconify ic sharp-adobe >}} + Photoshop {{< iconify devicon-plain photoshop >}}
-* Adobe Firefly Video {{< iconify ic sharp-adobe >}} + Premiere Pro {{< iconify devicon-plain premierepro >}}
+* Adobe Firefly {{< iconify logos adobe-icon >}} + Photoshop {{< iconify devicon photoshop >}}
+* Adobe Firefly Video {{< iconify logos adobe-icon >}} + Premiere Pro {{< iconify devicon premierepro >}}
 * tell me your own experience
 :::
 
@@ -291,7 +307,7 @@ You can use instead
 
 ## The {{< iconify icon-park-outline elephant >}} in the room
 
- We did not discuss today is the impact of LLMs on *learning*
+ We did not discuss today is the impact of generative AI on *learning*
 
 <br>
 
@@ -302,3 +318,5 @@ You can use instead
 ...  
 {{< iconify hugeicons brain-02 >}} *thinking*
 :::
+
+

@@ -168,6 +168,13 @@
     "text": "let’s see what happens"
   },
   {
+    "objectID": "talks/AI-2025/index.html#sora.com-5-minutes-of-play",
+    "href": "talks/AI-2025/index.html#sora.com-5-minutes-of-play",
+    "title": "Give AI the stuff you don’t wanna do",
+    "section": "sora.com, 5 minutes of play",
+    "text": "sora.com, 5 minutes of play\n\n\nin a bucolic farm, we see a zoo, where all the animals are living origami creatures in the style of Robert Lang’s creations. the animals move and are each the size of a car: elephant, t-rex, moose, praying mantis"
+  },
+  {
     "objectID": "talks/AI-2025/index.html#ethan-mollicks-book",
     "href": "talks/AI-2025/index.html#ethan-mollicks-book",
     "title": "Give AI the stuff you don’t wanna do",
@@ -319,14 +326,14 @@
     "href": "talks/AI-2025/index.html#integration-is",
     "title": "Give AI the stuff you don’t wanna do",
     "section": "Integration is ",
-    "text": "Integration is \n\n\nGitHub Copilot  + VS Code \nChatGPT Canvas \nAdobe Firefly  + Photoshop \nAdobe Firefly Video  + Premiere Pro \ntell me your own experience"
+    "text": "Integration is \n\n\nGitHub Copilot  + VS Code \nGemini  + Google apps   …\nChatGPT Canvas \nAdobe Firefly  + Photoshop \nAdobe Firefly Video  + Premiere Pro \ntell me your own experience"
   },
   {
     "objectID": "talks/AI-2025/index.html#the-in-the-room",
     "href": "talks/AI-2025/index.html#the-in-the-room",
     "title": "Give AI the stuff you don’t wanna do",
     "section": "The  in the room",
-    "text": "The  in the room\nWe did not discuss today is the impact of LLMs on learning\n\n\n reading\n writing\n programming\n…\n thinking"
+    "text": "The  in the room\nWe did not discuss today is the impact of generative AI on learning\n\n\n reading\n writing\n programming\n…\n thinking"
   },
   {
     "objectID": "index.html",
