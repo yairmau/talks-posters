@@ -175,6 +175,79 @@ Beware of hallucinations or of the AI wanting to give you BS answers just to kee
 
 ---
 
+
+## treat AI like a person
+
+* write this in the style of...
+
+::: {.fragment}
+* I'm stuck, help me finish this paragraph, give me 10 possible endings
+:::
+::: {.fragment}
+* I need creative names for my manuscript title, give me 10 options based on the attached pdf
+:::
+::: {.fragment}
+* check this paragraph for coherence, flow, grammar. Don't change the ideas nor the order they are in
+:::
+
+---
+
+
+## treat AI like a person
+
+* the transition between these two paragraphs is too abrupt, help me find a good transition, give me 5 options
+
+::: {.fragment}
+* Be the proverbial reviewer number 2: check this manuscript and give me your best criticism
+:::
+::: {.fragment}
+* I want to cite this paper in my manuscript because I think it supports the following assertion. Does it really?
+:::
+
+---
+
+
+## treat AI like a person
+
+* I can't find a good citation for this claim. Suggest 5 relevant papers.
+
+::: {.fragment}
+* I need to buy my father a birthday gift, I'm thinking of a smart watch. Recommend me 5 good options below $400.
+:::
+::: {.fragment}
+* take a critical look at the goals and hypothesis in this proposal I wrote
+:::
+
+---
+
+
+## 3 kinds of tasks
+
+Just Me Tasks
+
+* tasks in which the AI is not useful and only gets in the way, at least for now
+* tasks that you strongly believe should remain human, with no AI help
+
+---
+
+## 3 kinds of tasks
+
+Delegated Tasks
+
+* tasks that you assign the AI and may carefully check (the AI makes stuff up all the time), but ultimately do not want to spend a lot of time on. 
+* usually stuff you really don’t want to do and is of low importance, or time-consuming
+* the perfect Delegated Task is tedious, repetitive, or boring for humans but easy and efficient for AI.
+
+---
+
+## 3 kinds of tasks
+
+Automated Tasks
+
+* tasks you leave completely to the AI and don’t even check on
+* usually we stop calling the algorithm "AI" at this point
+---
+
 ## assume this is the worst AI you will ever use
 :::{.center .r-stack style="font-size: 8em;"}
 {{< iconify mynaui rocket-solid >}} 
