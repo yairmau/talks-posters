@@ -43,10 +43,11 @@ format:
 :::
 
 ::: {.fragment}
-<video
+![](20250114_1748_Origami Animal Wonderland_simple_compose_01jhjqzxwaetxa31pa1nzv1pvb.gif){.absolute left=0 right=0 bottom=-400 top=0 height="50%" style="margin: auto auto;"}
+<!-- <video
   controls width="65%" height="auto" style="display: block; margin-left: auto; margin-right: auto;"
-  src="20250114_1748_Origami Animal Wonderland_simple_compose_01jhjqzxwaetxa31pa1nzv1pvb.mp4"
-></video>
+  src="20250114_1748_Origami_Animal_Wonderland_simple_compose_01jhjqzxwaetxa31pa1nzv1pvb.mp4" type="video/mp4"
+></video> -->
 :::
 
 ---
