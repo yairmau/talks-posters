@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -184,16 +184,20 @@ window.Quarto = {
 </header>
 
 
+<section id="question" class="level2">
+<h2 class="anchored" data-anchor-id="question">question</h2>
+<p>What happens to a system when we perturb it slightly away from its stable equilibrium?</p>
+</section>
 <section id="a-1d-linear-dynamical-system" class="level2">
 <h2 class="anchored" data-anchor-id="a-1d-linear-dynamical-system">a 1d linear dynamical system</h2>
 <p><span class="math display">\[
-\frac{dx}{dt} = ax
+\frac{dx}{dt} = ax.
 \]</span></p>
-<p>whose solution is</p>
+<p><span class="math inline">\(x=0\)</span> is a steady state solution. If we start away from it at <span class="math inline">\(x_0\)</span>, the solution can be obtained by integrating the equation above:</p>
 <p><span class="math display">\[
-x(t) = x_0 e^{at}
+x(t) = x_0 \,e^{at}
 \]</span></p>
-<div id="cell-2" class="cell" data-execution_count="2">
+<div id="cell-3" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>import stuff</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -207,7 +211,7 @@ x(t) = x_0 e^{at}
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># %matplotlib widget</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-3" class="cell" data-execution_count="3">
+<div id="cell-4" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>1d system</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> equation_1d(a, x):</span>
@@ -231,7 +235,7 @@ x(t) = x_0 e^{at}
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-4" class="cell" data-execution_count="68">
+<div id="cell-5" class="cell" data-execution_count="68">
 <details class="code-fold">
 <summary>now let’s plot</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># learn how to configure:</span></span>
@@ -279,8 +283,9 @@ x(t) = x_0 e^{at}
 </div>
 </div>
 </section>
-<section id="the-simplest-2d-dynamical-system" class="level2 page-columns page-full">
+<section id="the-simplest-2d-dynamical-system" class="level2">
 <h2 class="anchored" data-anchor-id="the-simplest-2d-dynamical-system">the simplest 2d dynamical system</h2>
+<p>Let’s see what happens when we perturb a 2d linear dynamical system slightly away from its stable equilibrium.</p>
 <p><span class="math display">\[\begin{align*}
 \frac{dx_1}{dt} &amp;= ax_1 + bx_2 \\
 \frac{dx_2}{dt} &amp;= cx_1 + dx_2
@@ -289,7 +294,8 @@ x(t) = x_0 e^{at}
 <p><span class="math display">\[
 \frac{d\mathbf{x}}{dt} = M \mathbf{x},
 \]</span> where <span class="math inline">\(\mathbf{x}=(x_1,x_2)\)</span> and <span class="math inline">\(M = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}\)</span>.</p>
-<div id="cell-6" class="cell" data-execution_count="69">
+<p>The steady state solution is <span class="math inline">\(\mathbf{x}=(0,0)\)</span>. Let’s see the flow in this 2d space.</p>
+<div id="cell-7" class="cell" data-execution_count="69">
 <details class="code-fold">
 <summary>system of equations</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> system_equations_2d(p, x, y):</span>
@@ -306,7 +312,7 @@ x(t) = x_0 e^{at}
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>      <span class="st">'c'</span>: <span class="op">+</span><span class="fl">0.0</span>, <span class="st">'d'</span>: <span class="op">-</span><span class="fl">2.0</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-7" class="cell" data-execution_count="70">
+<div id="cell-8" class="cell" data-execution_count="70">
 <details class="code-fold">
 <summary>prepare streamplot and trajectories</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>min_x, max_x <span class="op">=</span> [<span class="op">-</span><span class="dv">3</span>, <span class="dv">3</span>]</span>
@@ -329,7 +335,7 @@ x(t) = x_0 e^{at}
 <span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>t2 <span class="op">=</span> simulate_trajectory(A2, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="cell-8" class="cell" data-execution_count="71">
+<div id="cell-9" class="cell" data-execution_count="71">
 <details class="code-fold">
 <summary>now let’s plot</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
@@ -394,7 +400,8 @@ x(t) = x_0 e^{at}
 </div>
 </div>
 </div>
-<div id="cell-9" class="cell" data-execution_count="72">
+<p>The solution <span class="math inline">\(\mathbf{x}=(0,0)\)</span> is stable because both eigenvalues of <span class="math inline">\(M\)</span> are negative. What happens when we change the matrix slightly, but still keeping the eigenvalues exactly the same as before?</p>
+<div id="cell-11" class="cell" data-execution_count="72">
 <details class="code-fold">
 <summary>now let’s plot</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># learn how to configure:</span></span>
@@ -505,6 +512,16 @@ x(t) = x_0 e^{at}
 </div>
 </div>
 </div>
+</section>
+<section id="resilience" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="resilience">resilience</h2>
+<p>Resilience is defined as the minimal return rate to steady state:</p>
+<p><span class="math display">\[
+R = -\text{Re}(\lambda_1(M)),
+\]</span></p>
+<p>where <span class="math inline">\(\lambda_1(M)\)</span> is the eigenvalue with the largest real part.</p>
+<section id="mathematical-interlude-how-to-solve-the-system-of-equations" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="mathematical-interlude-how-to-solve-the-system-of-equations">mathematical interlude: how to solve the system of equations</h3>
 <p>The solution of the system of equation goes as follows:</p>
 <p><span class="math display">\[
 \frac{d\mathbf{x}}{dt} = M \mathbf{x} \Rightarrow \mathbf{x}(t) = e^{Mt} \mathbf{x}_0
@@ -572,6 +589,10 @@ PP^{-1} = I \implies \begin{pmatrix} 1 &amp; c \\ 0 &amp; -1 \end{pmatrix}\begin
        x_1(t) &amp;= x_{01}\, e^{-t} + c\, x_{02} (e^{-t} - e^{-2t}) \\
        x_2(t) &amp;= x_{02}\, e^{-2t}
 \end{align*}\]</span></p>
+</section>
+</section>
+<section id="the-big-question-for-today" class="level2">
+<h2 class="anchored" data-anchor-id="the-big-question-for-today">the big question for today</h2>
 <blockquote class="blockquote">
 <p>The question arises whether asymptotic behavior adequately characterizes the response to perturbations. Because of the short duration of many ecological experiments, transients may dominate the observed responses to perturbations. In addition, transient responses may be at least as important as asymptotic responses. Managers charged with ecosystem restoration, for example, are likely to be interested in both the short-term and long-term effects of their manipulations, particularly if the short-term effects can be large.</p>
 </blockquote>
@@ -598,11 +619,51 @@ H(A) = \frac{A + A^T}{2}
 \]</span></p>
 <p>is called the Hermitian (symmetric) part of <span class="math inline">\(A\)</span>.</p>
 <p>The reactivity is then <span class="math display">\[
-\sigma = \max_{\mathbf{x}\neq0} \left[ \frac{\mathbf{x}^T H(A) \mathbf{x}}{\lVert\mathbf{x}\rVert^2} \right]_{t=0}
+\sigma = \max_{\mathbf{x_0}\neq0} \left[ \frac{\mathbf{x}^T H(A) \mathbf{x}}{\lVert\mathbf{x}\rVert^2} \right]_{t=0}
 \]</span></p>
 <p><span class="math display">\[
 \sigma = \lambda_{\text{max}}(H(A))
 \]</span></p>
+<p>In simple words, the reactivity is the maximum eigenvalue of the Hermitian (symmetric) part of the matrix <span class="math inline">\(A\)</span>. Differently from the resilience, the reactivity is always real, because the Hermitian part of a matrix always has real eigenvalues.</p>
+<p>If <span class="math inline">\(\sigma &gt; 0\)</span> then at least one perturbation from the steady state <span class="math inline">\((\mathbf{x_0}\neq0)\)</span> will grow before it returns to the steady state. If <span class="math inline">\(\sigma &lt; 0\)</span> then <strong>all</strong> perturbations <span class="math inline">\((\mathbf{x_0})\)</span> will decay to the steady state without growing initially.</p>
+</section>
+<section id="amplification-envelope" class="level2">
+<h2 class="anchored" data-anchor-id="amplification-envelope">amplification envelope</h2>
+<p><span class="math display">\[
+\rho(t) = \max_{\mathbf{x_0}\neq0} \frac{\lVert\mathbf{x}\rVert(t)}{\lVert\mathbf{x}_0\rVert}
+\]</span></p>
+<p>This measures, for any time <span class="math inline">\(t &gt; 0\)</span>, the maximal deviation of any perturbation from the steady state.</p>
+<p><img src="lutscher1.png" class="img-fluid"> Source: Lutscher (2020)</p>
+<p>In general, there is not one initial perturbation that follows the amplification envelope all the time. Rather, for different <span class="math inline">\(t\)</span>, different initial perturbations produce the maximum deviation.</p>
+<p>From the amplification envelope one can calculate the reactivity and resilience as the slope of <span class="math inline">\(\ln(\rho(t))\)</span> in the limits as <span class="math inline">\(t \rightarrow 0\)</span> and <span class="math inline">\(t \rightarrow \infty\)</span>:</p>
+<p><span class="math display">\[
+\sigma = \frac{d}{dt}\ln\left[\rho(t)\right]\Bigg|_{t=0}
+\]</span></p>
+<p><span class="math display">\[
+R = \frac{d}{dt}\ln\left[\rho(t)\right]\Bigg|_{t=\infty}
+\]</span></p>
+</section>
+<section id="problem-scaling" class="level2">
+<h2 class="anchored" data-anchor-id="problem-scaling">problem: scaling</h2>
+<p>The definition of reactivity depends on the norm chosen, whereas resilience and stability do not. In particular, reactivity may depend on scaling.</p>
+<p>Solution?</p>
+<blockquote class="blockquote">
+<p>Mari, L., Casagrandi, R., Rinaldo, A., &amp; Gatto, M. (2017). A generalized definition of reactivity for ecological systems and the problem of transient species dynamics. Methods in Ecology and Evolution, 8(11), 1574-1584.</p>
+</blockquote>
+</section>
+<section id="wrong-way-response" class="level2">
+<h2 class="anchored" data-anchor-id="wrong-way-response">wrong-way response</h2>
+<p><img src="wrong-way.png" class="img-fluid"></p>
+<p>Source: Buckley, T. N. (2019). How do stomata respond to water status?. New Phytologist, 224(1), 21-36.</p>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<p>Lutscher, F., &amp; Wang, X. (2020). Reactivity of communities at equilibrium and periodic orbits. Journal of Theoretical Biology, 493, 110240.</p>
+<p>Mari, L., Casagrandi, R., Rinaldo, A., &amp; Gatto, M. (2017). A generalized definition of reactivity for ecological systems and the problem of transient species dynamics. Methods in Ecology and Evolution, 8(11), 1574-1584.</p>
+<p>McCoy, J. H. (2013). Amplification without instability: applying fluid dynamical insights in chemistry and biology. New Journal of Physics, 15(11), 113036.</p>
+<p>Neubert, M. G., &amp; Caswell, H. (1997). Alternatives to resilience for measuring the responses of ecological systems to perturbations. Ecology, 78(3), 653-665.</p>
+<p>Verdy, A., &amp; Caswell, H. (2008). Sensitivity analysis of reactive ecological dynamics. Bulletin of Mathematical Biology, 70, 1634-1659.</p>
+<p>Vesipa, R., &amp; Ridolfi, L. (2017). Impact of seasonal forcing on reactive ecological systems. Journal of Theoretical Biology, 419, 23-35.</p>
 
 
 </section>
