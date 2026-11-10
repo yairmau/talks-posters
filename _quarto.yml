@@ -12,14 +12,16 @@ website:
     collapse: true
     search: false
     right:
-      - about.qmd
+      - text: "← Back to yairmau.com"
+        href: https://yairmau.com/
 format:
   html:
     theme:
       # - litera
       # - custom.scss
-      light: [flatly, custom.scss, custom-light.scss]
-      dark: [darkly, custom.scss, custom-dark.scss]
+      - flatly
+      - custom.scss
+      - custom-light.scss
     css: styles.css
     # highlight: false
     # https://quarto.org/docs/output-formats/html-code.html#highlighting
